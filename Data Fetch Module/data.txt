@@ -1,0 +1,884 @@
+{ "data": [{"url" : "http://j.mp/2pvGAGQ","title" : "Survey: Americans Spent $1.4B on Credit Freeze Fees in Wake of Equifax Breach —  Krebs on Security","data" : "Almost 20 percent of Americans froze their credit file with one or more of the big three credit bureaus in the wake of last year’s data breach at Equifax, costing consumers an estimated $1.4 billion, according to a new study. The findings come as lawmakers in Congress are debating legislation that would make credit freezes free in every state.The figures, commissioned by small business loan provider Fundera and conducted by Wakefield Research, surveyed some 1,000 adults in the U.S. Respondents were asked to self-report how much they spent on the freezes; 32 percent said the freezes cost them $10 or less, but 38 percent said the total cost was $30 or more. The average cost to consumers who froze their credit after the Equifax breach was $23.A credit freeze blocks potential creditors from being able to view or “pull” your credit file, making it far more difficult for identity thieves to apply for new lines of credit in your name.Depending on your state of residence, the cost of placing a freeze on your credit file can run between $3 and $10 per credit bureau, and in many states the bureaus also can charge fees for temporarily “thawing” and removing a freeze (according a list published by Consumers Union, residents of four states — Indiana, Maine, North Carolina, South Carolina — do not need to pay to place, thaw or lift a freeze).Image: Wakefield Research.In a blog post published today, Fundera said the percentage of people who froze their credit in response to the Equifax breach incrementally decreases as people get older.“Thirty-two percent of millennials, 16 percent of Generation Xers and 12 percent of baby boomers froze their credit,” Fundera explained. “This data is surprising considering that older generations have been working on building their credit for a longer period of time, and thus they have a more established record to protect.”However, freeze fees could soon be a thing of the past. A provision included in a bill passed by the U.S. Senate on March 14 would require credit-reporting firms to let consumers place a freeze without paying (the measure is awaiting action in the House of Representatives).But there may be a catch: According to CNBC, the congressional effort to require free freezes is part of a larger measure, S. 2155, which rolls back some banking regulations put in place after the financial crisis that rocked the U.S. economy a decade ago.Consumer advocacy groups like Consumers Union and the U.S. Public Interest Research Group (USPIRG) have long advocated for free credit freezes. But they’re not too wild about S. 2155, arguing that it would undermine banking regulations passed in the wake of the 2007-2008 financial crisis.In a March 8 letter (PDF) opposing the bill, Consumers Union said the security freeze section fails to include a number of important consumer protections, such as a provision for the consumer to temporarily “lift” the freeze in order to open credit.“Moreover, it could preclude the states from making important improvements to expand protections against identity theft,” Consumers Union wrote.While it may seem like credit bureaus realized a huge financial windfall as a result of the Equifax breach, it’s important to keep in mind that credit bureaus also make money by selling your credit report to potential lenders — something they can’t do if there’s a freeze on your credit file.Curious about what a freeze involves, how to file one, and other options aside from the credit freeze? Check out this in-depth Q&A that KrebsOnSecurity published not long after the Equifax breach.Also, if you haven’t done so lately, take a moment to visit annualcreditreport.com to get a free copy of your credit file. A consumer survey published earlier this month found that roughly half of all Americans haven’t bothered to do this since the Equifax breach.
+
+
+ Tags: annualcreditreport.com, CNBC, Consumers Union, credit freeze, Equifax breach, Fundera, security freeze, U.S. Public Interest Research Group, Wakefield Research
+
+
+						This entry was posted on Thursday, March 22nd, 2018 at 10:08 am						and is filed under The Coming Storm.
+
+						You can follow any comments to this entry through the RSS 2.0 feed.
+
+
+
+													Both comments and pings are currently closed.
+
+
+
+						
+
+					
+We are a bank that has a lot of credit card fraud. We are just a small institution. How do people get our numbers from the dark web? We think most of the fraud is now coming form college or younger people who are buying our card information on the dark web. Do you thank it would be smart to look for our card numbers and buy them and then issue new cards? We think since we are small that we have been targeted by our card numbers. We have seen traffic increase on Sunday mornings or late Saturday nights.Also – the biggest player in this fraud – Wal-Mart and Sam’s. We blocked over $10mm of transactions at a Wal-Mart one weekend. Called the manger and found out that the thefts were sitting in self-checkout. They had to be running thru thousands of cards an on the machine for a long time. Just seems like they are violating the intent and laws of the credit card license for users. Seems like that they should be liable for broken internal controls. Know a good class action attorney??> How do people get our numbers from the dark web?Easy. A lot of the time the card numbers are swiped from either A) An insecure POS terminal that’s on stripe or stripe-fallback or B) An online merchant who’s not PCI compliant and storing the credit card data (as opposed to the authtoken) in full.
+As you should know, the magstripe is plain text and anyone who swipes it has full TRACK1 and TRACK2 data. So if it’s swiped, and the terminal is compromised, you have everything you need to clone the card.
+If an online merchant stores the card in full and doesn’t obscure it, as soon as they get owned the attacker has everything they need. Simple, nearly as simple as the insecure POS terminal situation.
+A third, but likely less likely situation, is someone’s identity gets stolen and the card was fraudulently signed up for using stolen data, but that probably comprises a very small percentage of the incidents.> Do you thank it would be smart to look for our card numbers and buy them and then issue new cards?
+I would never buy the data from them, even if it’s being done for a good deed. If you pay them, you are incentivizing the thief to continue on. Also I doubt you’re being targeted because you’re small.Now with regards to Wal-mart and Sams…doesn’t surprise me. They’re huge retailers that sell a lot of big-box items. Makes sense that they’ll be hit up for buying stolen goods and reselling them. I’d say a class action would be pointless, since as long as their policies and merchant agreement agree to this, there’s not much you can do. The liability shift in the Visa and MC spectrum are both well-known depending upon the steps followed.Regarding card fraud, some banks found that if they bought up their own card data they actually created a market for it and drove the prices *UP*. Our suggestion: If you are not already, join the FS-ISAC and NCFTA groups, get as much data as you can for little/no cost, and only shut down cards when they are actually used for fraud. You can spend more money on reissuing cards proactively than you would take losses on the cards that do get used.“We have seen traffic increase on Sunday mornings or late Saturday nights.”
+Just in the past few months my CU cut the maximum allowable daily ATM withdrawal for the weekend when they are not open to $250, half of what they allow at other times.Hey thats crazy. Im a manager at a branch as well & we deal with an insane amount of fraud as well. By chance what CU does that happen to be? I want to inform my superior of your similar plight.There also needs to be change in what it takes for parents/guardians to freeze the information of their minor children.  Once again, the most vulnerable are left wide open because it’s difficult to take action.Would love to see the breakdown of how much money Equifax lost due to the breach, vs how much they made by selling credit freezes.  I wonder if they actually _made_ money on the breach.Based on the $1.4 billion estimates and about 30% of that going to Equifax so around $466 million. The numbers for how much the Equifax breach cost them are all over the place but looking at all the articles I would say they have paid $400 million to date and that could go up to $600 million. Considering that they now have all new security tools, a new security team, and I assume a much better security program now, $66 million seems cheap. Equifax is rolling in $3 billion in annual revenue and has over 9,000 employees.Different Dave here: That was exactly the question I was going to ask.  If you’re profiting from the results of the breach, it could be worthwhile to engineer a fake breach calculated to minimise harm to yourself while maximising revenue from people paying you to clean up your own mess (or fake mess in this case).  You’d just need to have some high-level exec close to retirement who could act as a fall guy for it in exchange for getting a bigger golden handshake.Dave, what also makes matters worse is that Walmart does not bother with a pin for debit card purchases under $50.00. They just run them through. I do not like that practice and it makes me very reluctant to shop there. They also have a fast checkout which is basically unsupervised so plenty of opportunity to run stolen cards, etc. You just grab what you want, run a card, and you are out the door. On a positive note, Florida just passed a new law allowing people to freeze their credit for free. One small victory for consumers.I wouldn’t recommend using a debit card for purchases anyhow, as you’re usually out the money until the dispute resolution is complete, as opposed to credit cards where you are not liable for charges unless you lose the dispute.If you do use your debit card, I would recommend never using your PIN in case there are skimmers attached to the POS.Very good pointBut Equifax did not charge for freezes. They certainly didn’t charge us or others we know. So how did they make money from the freezes?Caray, I think it was because of situations like that that the survey intentionally did not assume a certain cost per person of applying freezes; rather it asked those surveyed to self-report the amount spent.I froze my Equifax credit report, and they didn’t make me pay a fee.  I also had to unfreeze it for a bit, and I wasn’t charged for that, nor for refreezing it.  My state allows up to a $10 charge per freeze/unfreeze and temporary unfreeze.Good  article !Apparently legislation from Congress is not needed as several states have already prohibited such fees. I suspect such laws at the national level will take a long time to be implemented or require other onerous compromising legislation.
+Contact your *state* legislature and demand that they eliminate all fees for freezing, “thawing” and unfreezing YOUR data.
+It’s your money!According to the Equifax site (https://bit.ly/2l9cF6J):“Equifax is waiving any fee to Place, Temporary Lift or Permanently Remove a Security Freeze through June 30, 2018. Any freeze activities after June 30, 2018 may be subject to the fees provided by your state of residence”.Get your freeze while it’s hot!!a ‘security freeze’ is NOT a credit freeze. it’s their scam to make you think your credit is frozen while they continue to pimp your financial profile and profit from thatFrom the Equifax Web site:“What is a Security Freeze?
+A security freeze, also known as a credit freeze, is a tool that can help prevent unauthorized access to your credit reports. Freezes are subject to regulation by each state. Once a freeze is placed on one of your credit reports, it prevents access to it by certain third parties, like lenders and creditors you’re requesting new credit from”.From the FTC Web site:
+“What is a credit freeze?
+Also known as a security freeze, this tool lets you restrict access to your credit report, which in turn makes it more difficult for identity thieves to open new accounts in your name. That’s because most creditors need to see your credit report before they approve a new account. If they can’t see your file, they may not extend the credit”.They are two different terms for the same thing. You are probably thinking about the “credit lock,” which as you say not the same thing as a freeze. This is explained in the Q&A linked to in the article: https://krebsonsecurity.com/2017/09/the-equifax-breach-what-you-should-know/Q: I see that Trans Union has a free offering. And it looks like they offer another free service called a credit lock. Why shouldn’t I just use that?A: I haven’t used that monitoring service, but it looks comparable to others. However, I take strong exception to the credit bureaus’ increasing use of the term “credit lock” to steer people away from securing a freeze on their file. I notice that Trans Union currently does this when consumers attempt to file a freeze. Your mileage may vary, but their motives for saddling consumers with even more confusing terminology are suspect. I would not count on a credit lock to take the place of a credit freeze, regardless of what these companies claim (consider the source).HMMM…..My first reaction when reading the subject line of this articleGuess that’s the conspiracy theorist in me coming out.This made my life almost unmanageable.
+But I learned the Breach made so much money as they sold there stocks before they told us of the breech.
+I was sold on the black market maybe to use my information to elect a criminal president.
+Everything is forsale these days.
+Greed over ethnics is now the norm.
+Look at Facebook.
+Look at our elections now.
+Ever since the computer and information became a commodity the thieves have been swarming.
+But now I know.I just went back to church and pray for everyone to go back to basics and treat others as you would want others to treat you.
+You can take my information but you can’t buy or sell my spirit.
+Enough is Enough.
+Simplfy.
+Enjoy you life.
+Stay away from the ways that try and control who you were born to be.
+I am more than a social security number.
+Not afraid no more.Hi David. If any of your information was sold on the dark web it was likely used to TRY and elect a criminal president. I thank God they were not successful and the country has once again turned back toward freedom. MAGAHey there Chip, how is life in the Upside Down?I wouldn’t know Derek. How is life in your filter bubble?well americans got a lot money.
+its debt but as we know for every debt there is equal debit.
+every debit is credit ,thats universal equilubrium law.Equifax should be forced to reimburse all of this and then promptly given the corporate death penaltyDilly dilly!Free makes me uncomfortable.
+Free makes it too easy for pranksters and other troublemakers to start swatting my credit file.  We all know that those credit bureaus have extremely bad security.
+I would rather pay the $10 ($10 times 4 credit bureaus).“I would rather pay the $10 ($10 times 4 credit bureaus).”Equifax, Experion, and TransUnion are the ones of which I’m aware.  Who is the fourth?I forgot about Innovis.  Nevermind.Innovis is considered to be the fourth, they’re a popular clearinghouse.I gave up on our system years ago. I have no credit, and I don’t want any. Render unto Caesar…Washington state recently passed and signed a bill to allow free credit freezes.Brian, you wouldn’t know the house, and/or senate bill number for that proposed law would you? It would help me pound on my congressman’s door to urge him to vote! I’ve been doing a lot of that since the breach – those idiots at Equifax really get my blood boiling! >:(That information is in the story with a link to the bill. It is S. 2155. Here’s the latest on that bill: https://www.congress.gov/bill/115th-congress/senate-bill/2155?q=%7B%22search%22%3A%5B%22S2155%22%5D%7D&r=1I’m assuming Senate Bill S. 2155 is a different bill, more related to lowering red tape.According to the stories I’ve read, the free credit freeze requirements were included in a larger banking reform bill designed to roll back regulations put in place after the financial crisis of 2007-2008.I see, thank you!If you are a senior (age varies by state), a number of states besides the four mentioned in the article also mandate free freezes and thaws.  The CR articles cited by Brian lists them, and each credit bureau has a similar list.I did try to freeze my credit with all 4 bureaus (there’s also Transunion besides the major 3) and guess what? My car insurance premiums started going up for no reason. I realized it only after about couple of years that they were charging me roughly around $100 more for a 6-month premium. How do I know? I read the large small print sheet of paper that comes with a bill that basically said that if we can’t access your credit we may jack up your rate. Which they did. I then called my insurance agent and asked him if a freeze would affect my premium and he basically didn’t know a thing about it. So just to try I decided to remove the freeze, and guess what, next time the premium bill was drastically lower. So keep this in mind when “playing” with these credit freezes. It may affect your other insurance premiums as well.PS. Oh, and if they pass the law that those freezes should become free, I want my $45 x 2 reimbursed that I spent on freezing and then on unfreezing my accounts. So keep that in mind as well — once you commit to doing it, you’ll have to pay equal amount to undo it later.My bottom line is that it is not as “innocent” sounding like Brian describes it here. They will find a way to get their money from you one way or another.Yeah if you have a good credit score and your insurance company was able to verify it, they were likely giving you a better rating, as people who can manage their finances tend to have less claims.Makes sense then that if suddenly they were blind  to your creditworthiness your premium would go up.Froze the big 3. Now moving to NV. In NV State Farm does a credit check each time I transfer a policy. 3 times so far. And they check all 3 services. TransUnion hits me up for $5 each time. And I am a 30+ year customer of State Farm in CA.I live in CA. I paid $0 to put freezes on my accounts with all 3 credit companies. There will be a $10 fee to permanently remove them.The Equifax breach was a fiasco waiting to happen.  And I’ll bet more are on the horizon.  I put together a presentation to fix the system structurally. Maybe it can do some good.  Here’s a link:http://dgregscott.com/143-million-reasons-credit-reporting-industry-reform-part-2/– GregLuckily I live in one of the 4 states that charge zero for the freeze so I froze all 4 of mine after reading Brian’s articles about this mess. I did apply for a loan last month from my credit union and got a pat on the back from the loan officer for putting the freeze in place. Unfroze the one the credit union checks for 24 hours so they could process the loan and everything went smoothly. Thanks for keeping us up to date with all the information Brian.Im a victim of fraud 4 time n credit breach i dont know who to contack i need helpI have a question that I am torn about. The 3 credit bureaus + Innovis have the option to create online accounts within them to dispute information, pull reports, and so on. Do most of you create online accounts for these websites? I try very hard not to create additional accounts, but then I think if someone
+malicious creates an account in my name then i will not be able to create my account later on. Thoughts? Advice? Thank you –I haven’t. My view is that phone based systems are required to have recorded logs (which shouldn’t be web accessible, and if they are, liability should be clear).Web based systems are a whole slew of invitations for attacks, injection, reset, hacking,…I froze my big 4 accounts (Equifax, Experian, TransUnion, and Innovis) years ago and froze a fifth (Chex systems for free) recently. I don’t expect to need to thaw or check anything, so why create an account which creates more exposure risk?Caveats:
+1. I have exposure risk in two other countries, one with weaker protection than the US and one with unknown…
+2. I have relationships with enough credit providers that I’m comfortable relying on them if I need credit as opposed to the open market (which would require a thaw) – companies with existing business to you aren’t blocked by freezes, so they can see your file or choose to extend credit based on the their direct experience with you.
+3. I’m not a US resident, so I don’t have immediate needs for US credit.Note that most people each year don’t need new credit, so leaving things frozen is the right baseline.It’s bad enough having to worry about credit card compromises.Buy 90 Dan Williams Jersey from
+China jerseys from china cheap factory, free shipping and easy returns also best service.This method could possibly be useful in case you’re in an emergency situation ,
+out in the boonies without reception, or misplaced in the woods with nothing
+shut by except a cottage manufactured from candy.For those of you that were affected, good credit or bad credit your identity is still always at risk. I work for a company that offers an identity shield to keep things like this from happening. I Had the protection at the time of the breach but I have a friend that was affected and one of her children were affected.  She subscribed to our services and they worked until she was back to pre theft status. Your backed by a 5 million dollar guarantee as well. Give you and your family a peace of mind. For a small fee get coverage at the touch of  an app. https://amilligan3105.wearelegalshield.com/By so doing, you usually are not only making your household grow, you might be also which makes it strong.Of course, allow us to take into account the power of audio players,
+which made the way to expanding the music business insurance agencies several
+different brands that offer such devices.  Her eyebrows are shaven, which indicates she’s married,
+and her eyes are narrowed in a dreamily gaze looking to the distance.My household is guarded by a slovenly hippopotamus, who enhances the power of my foundation as he sits listening to his iPod Shuffle while he munches on my shrubbery for sustenance.  His eyebrows are nonexistent, which indicates he’s wise beyond his years, and his eyes are narrowed in a stern expression reminiscent of the villains from spaghetti westerns.Click image for my skimmer series.A New York Times Bestseller! Badguy uses for your PCTools for a Safer PC Spammers Duke it OutYour email account may be worth far more than you imagine.eBanking Best Practices for BusinessesInnovations from the UndergroundID Protection Services ExaminedThe reasons for its declineFile 'em Before the Bad Guys Can A crash course in carding. Sign up, or Be Signed Up! Finding out is not so easy. ...For Online Safety. 
+
+		© 2018 Krebs on Security. 
+
+		 Powered by WordPress. 
+
+ Privacy Policy
+"},{"url" : "https://buff.ly/2pbSXrp","title" : "Equifax exec charged with insider trading, selling shares ahead of hack news – TechCrunch","data" : "Former Equifax  exec Jun Ying has been charged with insider trading, according to the Securities and Exchange Commission. Ying is accused of knowing that Equifax had been hacked and selling company shares before the public was notified.Ying, who was “next in line to the be company’s global CIO, allegedly used confidential information entrusted to him by the company to conclude that Equifax had suffered a serious breach,” says the SEC release. He sold $1 million in shares and avoided a potential loss of $117,000.Following the revelation of a widespread hack at the credit reporting agency, Equifax shares took a tumble on the stock market. Shares were above $142 and quickly fell to beneath $93 in the subsequent days.Ying wasn’t the only employee who sold shares, resulting in several execs getting accused of insider trading. TechCrunch wrote something at the time about different executives, and received this defense from Equifax, particularly with regards to the CFO.“As announced in the press release, Equifax discovered the cybersecurity incident on Saturday, July 29. The company acted immediately to stop the intrusion.The three executives who sold a small percentage of their Equifax shares on Tuesday, August 1, and Wednesday, August 2, had no knowledge that an intrusion had occurred at the time they sold their shares.”"},{"url" : "https://buff.ly/2HzoBG1","title" : "How Equifax Kept Its Mega Breach Secret From Its Own Staff","data" : "Equifax, the consumer credit reporting agency, was hacked in 2017, when data belonging to over 145 million Americans was stolen, including social security numbers, credit card numbers and addresses. (Photo by Jaap Arriens/NurPhoto via Getty Images)Did Equifax keep the massive 2017 data breach hidden from some of its own staff? That's just one claim dropped by the SEC in its complaint against a former executive, international chief information officer Jun Ying, who's been accused of insider trading after he sold stock just before the massive hack affecting 147 million individuals was publicly disclosed.A source close to the Equifax breach confirmed that some staff were not informed of the real name of the victim as the company tried to compartmentalize what was known in the buildup to the public release. But, the source said, it was standard practice and nothing resembling a cover-up.According to the SEC's complaint, Equifax set up two separate operations — Project Sierra and Project Sparta - to deal with the breach. Project Sierra was the name given to the overall response to the attack, which led to the loss of social security numbers, credit card information and other personal data of customers. Those on the Sierra team were told to keep their work secret from anyone outside of Equifax's "crisis action team," the SEC said. The group's work involved changing administrator passwords and other remediation efforts, according to the regulator's account.
+But it was Project Sparta, kept entirely separate from Sierra, that was required to be kept in the dark about the victim of the hack. On the one hand, the SEC said "they were tasked with setting up a website for consumers to determine whether they were affected by the breach, developing a suite of protective tools for consumers and staffing call centers." But they weren't told it was Equifax that was the real victim, according to the SEC, which wrote: "Those Equifax employees who were only part of Project Sparta were not told that Equifax had been breached, but were instead told that they were working for an unnamed client that had experienced a large data breach."In an internal email, Ying was one of those told that Equifax was working on a "VERY large breach opportunity" that needed a ramp-up in resources and a quick turnaround in response, the regulator wrote. But Ying started to figure out that Equifax was the one breached, the SEC wrote, noting that a month after Equifax started investigating the hack, in late August 2017, he texted a colleague: "On the phone with [global CIO]. Sounds bad. We may be the one breached... Starting to put 2 and 2 together."That same month, the SEC claimed Ying had searched for information regarding a breach at Equifax competitor Experian from 2015. "Within an hour of running the internet searches regarding the September 2015 cybersecurity breach of Experian, Ying accessed his company-sponsored stock plan account with UBS Financial Services, Inc., exercised all of his vested options to buy Equifax shares, and then immediately sold those Equifax shares for total proceeds of more than $950,000," the complaint read.The SEC has claimed Ying's trading saved him more than $117,000 in losses, which he would've incurred if he hadn't sold until after the breach news became public and Equifax shares dropped. By basing his decision to sell on nonpublic information entrusted to him by Equifax, Ying's actions were "deceptive and fraudulent," the SEC wrote.'Need-to-know basis'A source close to Equifax confirmed to Forbes that employees working on Project Sparta were not informed of the true identity of the victim company, but said this was typical practice. For instance, when Equifax is working with a client on a data breach, those employees working on consumer tools and protective measures would not be informed of the customer's identity until it went public. Only those who needed to know were told Equifax was the affected party; this was also standard and not in any way a cover-up, the source said.But there was one problem, cited by former SEC supervisory trial counsel David Axelrod, that such an approach caused: Anyone working in or alongside the Project Sparta team was not informed of the share trading blackout enforced on the Project Sierra workforce. Equifax couldn't tell employees (such as the accused) about the blackout without giving away its status as a victim, and finding the balance was a tricky question for the company, noted Axelrod, now a partner at law firm Ballard Spahr. "I think Equifax's heart was in the right place," he said. "It seemed like Equifax was trying to do the right thing, but probably the safer thing would've been to go broader [with the fact it was breached]."Of the charges against Ying, Equifax's interim chief executive officer, Paulino Do Rego Barros Jr., said: "Upon learning about Mr. Ying's August sale of Equifax shares, we launched a review of his trading activity, concluded he violated our company's trading policies, separated him from the company and reported our findings to government authorities. We are fully cooperating with the DOJ and the SEC, and will continue to do so."Ying's attorney could not be reached at the time of publication, but declined to comment to the Washington Post. He's also facing a federal charges from the Department of Justice after an investigation by the FBI.I cover security and privacy for Forbes. I’ve been breaking news and writing features on these topics for major publications since 2010. As a freelancer, I worked for The Guardian, Vice Motherboard, Wired and BBC.com, amongst many others. I was named BT Security Journalist o...Got a tip? Get me on Signal on +447837496820 or use SecureDrop to tip anyone at Forbes. Email at TBrewster@forbes.com or tbthomasbrewster@gmail.com for PGP mail."},{"url" : "http://politi.co/2IlyLvf","title" : "Senate banking bill rewards Equifax despite privacy breaches - POLITICO","data" : "
+Money
+                        Newly released provisions would allow the company and its industry peers to enter the mortgage market while shielding them from consumer lawsuits.
+                    By ZACHARY WARMBRODT03/12/2018 07:09 PM EDT
+                Paulino do Rego Barros, Jr., interim CEO of Equifax waits to testify before the Senate Commerce Committee on Capitol Hill on Nov. 8, 2017. The company has been criticized for its handling of a major data breach. | Susan Walsh/AP PhotoEquifax’s role in the biggest consumer data breach in U.S. history isn’t stopping Congress from giving the giant credit reporting company sweeping protection from lawsuits while allowing it to expand its offerings into the mortgage business.Those favors for Equifax and its peers in the credit reporting industry are among the surprise provisions in a major banking and financial deregulation bill that the Senate is set to pass this week.Story Continued BelowThe changes, made public only last Wednesday, are providing new ammunition to critics of the banking legislation, which would scale back regulations imposed after the 2008 financial crisis. Congress has yet to pass any laws creating stiffer penalties for companies like Equifax, whose security practices allowed hackers to steal highly sensitive data on as many as 148 million U.S. customers last year."This is the credit reporting agencies, one of whom caused more than half of the U.S. adult population to get hacked and to have their Social Security numbers in the hands of thieves," National Consumer Law Center staff attorney Chi Chi Wu said. "They really should not have that political clout right now."The Senate is on track to pass the banking legislation around the middle of this week after a procedural vote Monday evening. The credit-reporting issues could remain in play when the House takes up the bill.On the surface, the bill appears to impose a large burden on Equifax, TransUnion and Experian, which would be required for the first time to provide free credit freezes for consumers and free credit monitoring for members of the military.But lobbyists for the companies quietly prevailed in a months-long fight to secure language that would shield the firms from consumer lawsuits stemming from the free credit monitoring requirement. Another add-on — which could have a considerable impact on the housing market — could give a joint venture operated by the three companies an entry into providing credit scores for aspiring homeowners applying for mortgages.Equifax has taken criticism not just for the data breach, which it disclosed in September, but also for the way it handled the issue — including the revelation that three high-ranking executives sold stock just after the company discovered it had been hacked but before revealing it to the public. It has also jousted with Sen. Elizabeth Warren (D-Mass.), over her accusation that consumers’ passport numbers were among the data that fell into the hackers’ hands, something the company denies.The seeds of the latest controversy over the banking bill were planted in December. A daily briefing on politics and cybersecurity — weekday mornings, in your inbox.By signing up you agree to receive email newsletters or alerts from POLITICO. You can unsubscribe at any time.Just before the Senate Banking Committee began voting on an earlier version of the deregulation package, Delaware Sens. Tom Carper and Chris Coons announced they were adding their names to the list of Democratic co-sponsors. They offered their support after persuading the bill's authors to include "quality, free credit monitoring" for all active-duty military service members."When it comes to banking legislation, our first priority is to ensure strong consumer protections," they said in the announcement.The credit-reporting companies quickly learned that in addition to forcing them to give away products for free, the Carper-Coons language would expose them to litigation because it would be folded into the Fair Credit Reporting Act, a 1970 law that allows for class-action lawsuits.But when Senate Banking Chairman Mike Crapo (R-Idaho) finally revealed the new legislative text Wednesday evening, it included language barring the military service members from suing the credit reporting companies.Lobbyists for the credit reporting companies and their trade group, the Consumer Data Industry Association, had pushed lawmakers to bar consumer lawsuits by inserting the credit monitoring provision into a different decades-old law. "We oppose allowing class-action litigation as an enforcement mechanism," the group said in a February letter to lawmakers. "Class-action litigation in the FCRA context generally results in minor awards to consumers, with huge payouts to trial attorneys, while hurting innovation and harming consumers in the long run." Those arguments found a receptive ear with conservative activists such as Grover Norquist, the president of Americans for Tax Reform, who argued in a letter to Crapo that the proposal would expose the companies to "new liability which the trial bar will certainly try to exploit." Sen. Richard Shelby (R-Ala.), a past Banking Committee chairman, likewise decried class-action lawsuits as arrangements in which “the consumer gets 16 cents and lawyers get $10 million.”“I don't think that's good for business or good for the consumer," Shelby said last week.Republicans in Congress hammered a similar theme last year, when they killed a Consumer Financial Protection Bureau rule intended to make it easier for consumers to sue banks and other financial firms.Under Crapo’s proposal, the Federal Trade Commission would be responsible for enforcing the credit monitoring requirement as part of the Fair Credit Reporting Act, and state attorneys general would retain the authority to take the firms to court. But members of the military, who are entitled to credit monitoring under the proposal, would have little recourse if the companies fail to live up to the mandate thanks to language prohibiting class-action lawsuits."Let's say the credit reporting agencies say, 'We're just going to not do this,' or what they offer doesn't really work," Wu said. "Unless a federal or state regulator goes after them, they can get away scot-free."
+Wealth Of Nations
+                    By COLIN WILHELM, PATTERSON CLARK and TODD LINDEMANThe carve-out immediately opened a new line of attack against the legislation."Equifax is willing to do a little bit for people, just a little bit, but damn it, you can't sue us then," Sen. Sherrod Brown, the Ohio Democrat fighting the legislation, said on the Senate floor Thursday. "That was the deal. We'll give you a little bit of credit monitoring but in return you can't sue us for anything you do."Francis Creighton, the president and CEO of the association representing the credit-reporting companies, said the group appreciated senators' willingness to "discuss how to get the bill's provisions right and improve the bill."The other big victory for Equifax and its peers, the credit-scoring provision, also appeared in the version of the banking bill that emerged Wednesday evening.It would force government-controlled mortgage giants Fannie Mae and Freddie Mac to consider allowing the use of consumer credit score models beyond those provided by FICO, which for years has dominated the space with Fannie and Freddie's blessing. The government-sponsored enterprises play a central role in the way the U.S. housing finance market operates because they buy and guarantee mortgages.The addition was a win for VantageScore, a credit scoring joint venture from Equifax, Experian and TransUnion. It's the primary competitor looking to enter FICO's turf and has been a vocal supporter of the legislation.The provision is based on a proposal from Sens. Tim Scott (R-S.C.) and Mark Warner (D-Va.). The bill's backers argue that the legislation is necessary because FICO has been allowed to operate like a monopoly. The bill represents one of the most substantial legislative changes to the housing finance system since Fannie and Freddie entered government conservatorship during the financial crisis."By removing a significant barrier to entry, we could see multiple folks jump in with a scoring system that more accurately reflects the way millions of families across the country pay their bills on time," Scott spokeswoman Michele Exner said.But FICO senior director Joanne Gaskin said the Senate proposal would circumvent a review process the Federal Housing Finance Agency already has under way and delay its decision on updating the mortgage credit scoring model. FICO had been ramping up lobbying efforts with the legislation looming, including by tapping the Washington firms Glover Park Group and Peck Madigan Jones.FICO also has concerns that its main competitor is owned by Equifax and the other credit-reporting companies."Allowing the credit bureaus to offer a score they own in a system where they are the single point of sale and distribution for both credit reports and scores would not increase competition,” Gaskin said. “It would consolidate their power."Missing out on the latest scoops? Sign up for POLITICO Playbook and get the latest news, every morning — in your inbox.
+                                            By Jarrett Blanc
+                                            By Issac J. Bailey
+                                            By Theodore R. Johnson
+                                            By Annie Karni © 2018 POLITICO LLC"},{"url" : "http://cnb.cx/2HvsSKw","title" : "Ex-Equifax executive charged with insider trading ahead of data breach","data" : "
+
+
+
+            var postLoadFunctions = {};
+            var foresee_enabled = 1
+            var dynamic_yield_enabled = 1
+                    
+
+
+
+	CNBC_Comscore = 'Business_News';
+
+
+
+		var mpscall = {
+						'site' : 'cnbc.com-relaunch'  ,  
+
+					'content_id' : '105059228'  ,  
+
+					'path' : '/id/105059228'  ,  
+
+					'is_content' : '1'  ,  
+
+					'is_sponsored' : '0'  ,  
+
+					'adunits' : 'Top Banner|Badge A|Badge B|Badge C|Badge D|Flex Ad First|Box Ad 1|Non Iframe Custom|Inline Custom|Movable Box Ad|Responsive Rectangle'  ,  
+
+					'keywords' : '~'  ,  
+
+					'cat' : 'Business News|Finance'  ,  
+
+					'cag[configuration_franchise]' : 'Finance'  ,  
+
+					'cag[attribution_source]' : 'CNBC US Source'  ,  
+
+					'cag[attribution_author]' : 'Liz Moyer'  ,  
+
+					'cag[related_primary]' : 'quotes|Equifax Inc|Business|US: News|Business News'  ,  
+
+					'cag[type_franchise]' : 'Finance|US: News|Business News|quotes'  ,  
+
+					'cag[type_source]' : 'CNBC US Source'  ,  
+
+					'cag[type_creator]' : 'Liz Moyer'  ,  
+
+					'cag[type_company]' : 'Equifax Inc'  ,  
+
+					'cag[type_tag]' : 'Business'  ,  
+
+					'cag[brand]' : 'none'  ,  
+
+					'cag[template]' : 'story_simple'  ,  
+
+					'cag[device]' : 'web'  ,  
+
+					'hline' : 'Finance'  ,  
+
+					'type' : 'cnbcnewsstory'  ,  
+
+					'template' : 'story_simple'  ,  
+
+					'title' : 'Former Equifax executive charged with insider trading for dumping nearly $1 million in stock ahead of data breach'  ,  
+
+					'pubdate' : '1521037282'  ,  
+
+					'stitle' : 'Equifax 180314 EC'  ,  
+
+					'byline' : 'Liz Moyer'  ,  
+
+					'subtype' : 'section'  ,  
+
+					'id' : '105059228'  ,  
+
+					'nid' : '105059228'  
+
+		
+		}, mpsopts = {
+		  
+		"host" : 'mps.cnbc.com',
+		"updatecorrelator" : true
+
+		};
+
+		var mps = mps || {};
+		mps._ext = mps._ext || {};
+		mps._adsheld = [];
+		mps._queue = mps._queue || {};
+		mps._queue.mpsloaded = mps._queue.mpsloaded || [];
+		mps._queue.mpsinit = mps._queue.mpsinit || [];
+		mps._queue.gptloaded = mps._queue.gptloaded || [];
+		mps._queue.adload = mps._queue.adload || [];
+		mps._queue.adclone = mps._queue.adclone || [];
+		mps._queue.adview = mps._queue.adview || [];
+		mps._queue.refreshads = mps._queue.refreshads || [];
+		mps.__timer = Date.now ? Date.now() : (function() { return +new Date })();
+		mps.__intcode = "v2";
+		if (typeof mps.getAd != "function") mps.getAd = function(adunit) {
+		    if (typeof adunit != "string") return false;
+		    var slotid = "mps-getad-" + adunit.replace(/\W/g, "");
+		    if (!mps._ext || !mps._ext.loaded) {
+		        mps._queue.gptloaded.push(function() {
+		            typeof mps._gptfirst == "function" && mps._gptfirst(adunit, slotid);
+		            mps.insertAd("#" + slotid, adunit)
+		        });
+		        mps._adsheld.push(adunit)
+		    }
+		    return '<div id="' + slotid + '" class="mps-wrapper" data-mps-fill-slot="' + adunit + '"></div>'
+		};
+		(function() {
+		    head = document.head || document.getElementsByTagName("head")[0], mpsload = document.createElement("script");
+		    mpsload.src = "//" + mpsopts.host + "/fetch/ext/load-" + mpscall.site + ".js?nowrite=2";
+		    mpsload.id = "mps-load";
+		    head.insertBefore(mpsload, head.firstChild)
+		})();
+
+	
+
+
+
+
+  
+
+
+var cnbcDY = {};
+if (mpscall.template.indexOf("story") != -1 || mpscall.template.indexOf("slideshow") != -1) {
+  cnbcDY.type = 'POST';
+  cnbcDY.data = mpscall.id;
+} else if (mpscall.template == "home_page_ng") {
+  cnbcDY.type = 'HOMEPAGE';
+  cnbcDY.data = '';
+} else if (mpscall.type == "franchise" && mpscall.template != "video_gallery") {
+  cnbcDY.type = 'CATEGORY';
+  cnbcDY.data = mpscall.cat.toLowerCase().split("|");
+} else {
+  cnbcDY.type = '';
+  cnbcDY.data = '';
+}
+
+
+
+DY = {scsec : 8765304 ,API: function(){(DY.API.actions = DY.API.actions || []).push(arguments)}};
+DY.recommendationContext = {type: cnbcDY.type, data: cnbcDY.data};
+
+
+
+
+                (function() {
+                                var s = document.createElement('script'),
+                                t = document.getElementsByTagName('script')[0];
+                                s.async = false;
+                                s.src=('https:'==document.location.protocol?'http://st.dynamicyield.com'.replace('http:','https:') : 'http://st.dynamicyield.com' ) + '/ast?sec='+DY.scsec + '&head=true';
+                                t.parentNode.insertBefore(s, t);
+                })();
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  mps._queue.mpsloaded.push(function(){
+
+    mps._log('**** LOADED: cnbc-cms-header-insert');
+
+    if (window.mps) {
+
+        if (window.CNBC_Premium && CNBC_Premium.isPremium && document.cookie.indexOf('ispro=true') == -1 && (mps.pagevars.type!="franchise")) {
+
+          mps.nlformtypes = mps.nlformtypes || [];
+
+          mps.nlformtypes.push('paywall');
+
+        }
+
+
+
+        //<!-- Omniture s_code path -->
+
+        mps.scodePath="//fm.cnbc.com/applications/cnbc.com/staticcontent/scripts/omniture/s_code.js?v=1.6.4.1";
+
+        //<!-- end: Omniture s_code path -->
+
+
+
+        //<!-- Google PII Fix BEGIN -->
+
+        mps._queue.mpsinit.push(function() {
+
+          (function(){
+
+            mps._urlContainsEmail = function() {
+
+              var _qs = window.location.href;
+
+              if (!_qs) {
+
+                return false;
+
+              }
+
+              var _regex = /([^=&/<>()[].,;:s@"]+(.[^=&/<>()[].,;:s@"]+)*)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))/;
+
+              return _regex.test(_qs);
+
+            };
+
+            if (mps._urlContainsEmail()) {
+
+              mps._debug('[MPS]: email address detected in url, bypass gpt.');
+
+              if (mps.response && mps.response.dart && typeof(mps.response.dart.adunits) === 'object') {
+
+                if (typeof(window._mpspixZ) != 'string') {
+
+                  window._mpspixZ = (function(a){var b="abcdefghiklmnopqrstuvwxyz".split("");a||(a=Math.floor(Math.random()*b.length));for(var c="",d=0;d<a;d++)c+=b[Math.floor(Math.random()*b.length)];return c})(12)
+
+                }
+
+                for (var i in mps.response.dart.adunits) {
+
+                  var pixelurl = ((document.location.protocol === 'https') ? 'https' : 'http') + '://pix.nbcuni.com/a-pii.gif?X=piiblock&S=' + mps.pagevars.instance + '&P=' + mps.pagevars.mpsid + '&A=' + i + '&U=' + encodeURIComponent(window.location.href) + '&_=' + window._mpspixZ;
+
+                  mps.response.dart.adunits[i].data = '<img id="div-gpt-x-0" class="mps-slot" data-mps-slot="x" data-mps-loadset="0" style="width:0;height:0;margin:0;padding:0;border:0;display:none;" src="' + pixelurl + '"/>';
+
+                }
+
+              }
+
+              mps.cloneAd = function() { return false; }
+
+              return true;
+
+            } else {
+
+              return false;
+
+            }
+
+          })();
+
+        });
+
+        //<!-- Google PII Fix END -->
+
+   }
+
+ });
+
+});
+
+
+
+
+
+    var setAdblockerCookie = function(adblocker) {
+
+        var d = new Date();
+
+        d.setTime(d.getTime() + 60 * 60 * 24 * 30 * 1000);
+
+        document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/";
+
+    }
+
+    var script = document.createElement("script");
+
+    script.setAttribute("async", true);
+
+    script.setAttribute("src", "//www.npttech.com/advertising.js");
+
+    script.setAttribute("onerror", "setAdblockerCookie(true);");
+
+    script.setAttribute("onload", "setAdblockerCookie(false);");
+
+    document.getElementsByTagName("head")[0].appendChild(script);
+
+
+
+
+
+
+  if(typeof window.MediaSource !== 'function') {
+
+    if(typeof document.getElementsByTagName('meta')['tp:PreferredRuntimes'] === 'object') {
+
+        document.getElementsByTagName('meta')['tp:PreferredRuntimes'].setAttribute("content", "flash,html5");
+
+    }
+
+}
+
+
+
+
+
+
+
+Keep Me Logged InA former Equifax executive faces insider trading charges for dumping nearly $1 million of company stock just days before the credit reporting company announced a massive data breach last summer.The U.S. attorney in Atlanta said Jun Ying, 42, was indicted Tuesday by a federal grand jury on criminal charges. The Securities and Exchange Commission filed civil insider trading charges on Wednesday.Ying, who was to become the company's next chief information officer, used confidential information to exercise his vested Equifax stock options and then sell the shares before the company publicly reported a breach that affected more than 145 million people, investigators said.Because of the trades, Ying was able to avoid $117,000 in losses, the SEC said Wednesday. He sold the equivalent of $950,000 in stock. He was the chief information officer of one of Equifax's business units and a leading candidate to take on the top CIO role at the company. The SEC said he was offered the global CIO job on Sept. 15, one week after the company disclosed the data breach and the day the sitting CIO resigned.In a statement on Wednesday, Paulino do Rego Barros, Equifax's interim chief executive officer, said the company referred the matter to the government after an internal investigation and was cooperating with the U.S. Attorney and SEC. "We take corporate governance and compliance very seriously, and will not tolerate violations of our policies."Lawyers for Ying told CNBC they aren't giving media interviews, citing the pending case. Ying is not one of the Equifax executives who attracted attention for disclosing they had sold $1.8 million of stock just days after the company discovered security issues and weeks before it announced the intrustion.  In November, a special committee of Equifax's board found that the sales, by four executives, were not improper and that none of them knew about the security breach at the time of the sales. The executives were CFO John Gamble; Joseph Loughran and Rodolfo Ploder, who run two of its business units; and Douglas Brandberg, a senior staffer in investor relations.Equifax has acknowledged it discovered suspicious activity in its system in late July. It didn't disclose the data breach publicly until Sept. 7.In the interim, it hired an outside law firm to investigate the activity alongside its internal security department. "Project Sierra," as the investigation was known internally, subjected employees to a trading blackout period regarding the company's stock. A separate team, known as "Project Sparta" was set up to develop a customer website and staff up a call center. The Sparta employees were told they were working on a project for a client, the SEC said its lawsuit on Wednesday.Ying wasn't a part of either Sierra or Sparta projects but found out about the Equifax breach through a series of internal communications in late August, in which he inferred that it was Equifax itself and not a client that was the subject of the breach, the SEC said.In the next few days after those communications, Ying researched the stock moves of a competitor company after it announced a data breach. He exercised his Equifax options and sold the shares on Aug. 28, within an hour of researching the stock move in Experian after its September 2015 data breach, the SEC said.Two days later, an executive told him it was Equifax that was the subject of the breach and advised him not to trade company stock. Equifax shares dropped 14 percent the day after the breach was made public.Ying was offered the CIO job but that offer was rescinded after his trading activity came to light. In October, the company concluded he had violated its insider trading policy, and he agreed to resign. Ying will be arraigned on the federal criminal charges later this week, according to Byung J. Pak, the U.S. Attorney in Atlanta.PlayingShare this video...Watch Next...Got a confidential news tip? We want to hear from you.Sign up for free newsletters and get more CNBC delivered to your inboxGet this delivered to your inbox, and more info about our products and services. Privacy Policy.© 2018 CNBC LLC. All Rights Reserved. A Division of NBCUniversalData is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and Market Data and Analysis.Data also provided by "},{"url" : "https://buff.ly/2IpFMep","title" : "Former Equifax exec charged with insider trading after data breach - Help Net Security","data" : "Jun Ying, a former Equifax executive, has been hit with criminal charges as well as SEC (Securities and Exchange Commission) charges for insider trading relating to his sales of Equifax stocks in advance of the company’s announcement regarding the May 2017 data breach. Ying was the chief information officer of Equifax U.S. Information Solutions and was next in line to be the company’s global CIO. He allegedly used confidential information entrusted to him by the company to conclude that Equifax had suffered a serious breach.“On Friday, August 25, 2017, Ying texted a co-worker that the breach they were working on ‘Sounds bad. We may be the one breached.’ The following Monday, Ying conducted web searches on the impact of Experian’s 2015 data breach on its stock price,” a Justice Department statement explains.“Later that morning, Ying exercised all of his available stock options held at UBS Financial Services, resulting in him receiving 6,815 shares of Equifax stock, which he then sold. He received proceeds of over $950,000, and realized a gain of over $480,000. On September 7, 2017, Equifax publicly announced its data breach, which resulted in its stock price falling.”All in all, he avoided over $117,000 in losses. According to the SEC complaint, Ying was officially told of the breach on August 30, 2017, two days after he sold the shares. “On September 15, 2017, following the resignation of the then-current global CIO, Ying was offered the position of global CIO of Equifax. The offer was subsequently withdrawn, however, after Equifax senior executives learned of Ying’s trading,” the complaint notes.“On October 16, 2017, following an internal Equifax investigation into Ying’s trading, the company concluded that he had violated the company’s insider trading policy and that his employment should be terminated. At that time, Ying agreed to resign.”Equifax’s interim CEO confirmed that they reported the finding of their investigation to government authorities, and that they cooperated and will continue to cooperate with the Justice Department and the SEC.The SEC is asking the court to find Ying guilty of violating the antifraud provisions of the federal securities laws and order him to give up an amount equal to the losses avoided as a result of his actions (plus interest) and pay a civil monetary penalty. They also want the court to prohibit Ying from serving as an officer or director of a public company.“Corporate insiders who learn inside information, including information about material cyber intrusions, cannot betray shareholders for their own financial benefit,” said Richard R. Best, Director of the SEC’s Atlanta Regional Office.The press release by the DOJ prosecutors does not say if Ying is likely to get a prison sentence if found guilty of the charges.Four other Equifax senior executives sold shares before the public revelation of the breach, but were cleared of any wrongdoing by a special committee of three directors from other firms.Subscribe to get regular updates from Help Net Security. The weekly newsletter contains a selection of the best stories, while the daily newsletter highlights all the latest headlines!
+                            Copyright 1998-2018 by Help Net Security   |   Read our privacy policy   |   About us   |   Contact   |   Advertise
+
+Design by FatDUX
+"},{},{},{"url" : "https://www.finextra.com/newsarticle/31820/former-equifax-cio-charged-with-insider-trading?utm_medium=newsflash&utm_source=2018-3-15&member=87147","title" : "
+
+	Former Equifax CIO charged with insider trading
+
+","data" : "Welcome to Finextra. We use cookies to help us to deliver our services. We'll assume you're ok with this. Please read our Privacy Policy.For Finextra's free daily newsletter, breaking news and flashes and weekly job board.
+
+                A former Equifax executive has been charged by US authorities with insider trading, accused of selling off all of his stock in the credit rating agency last summer before it revealed it had suffered a massive data breach.
+
+            Sponsored: Join Finextra and OneSpan for our on demand webinar: Driving the digital Agenda.For Finextra's free daily newsletter, breaking news and flashes and weekly job board.
+Write a blog post about this story (membership required)
+
+
+
+                                17 Oct
+
+                            
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+ 32
+
+
+
+
+
+
+
+
+
+ 37
+
+
+
+
+
+
+                                18 Oct
+
+                            
+
+
+
+
+
+
+
+
+ 2
+
+
+
+
+
+
+
+
+
+ 14
+
+
+
+
+
+
+
+
+
+ 25
+
+
+
+
+
+
+                                17 Oct
+
+                            
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+ 3
+
+
+
+
+
+
+
+
+
+ 2
+
+
+
+
+
+
+                                17 Oct
+
+                            
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+ 7
+
+
+
+
+
+
+
+
+
+ 3
+
+
+
+
+
+
+                                            02 March 2018
+
+                                        
+
+
+
+
+
+
+
+
+ 1
+
+
+
+
+
+
+
+
+
+ 7
+
+
+
+
+
+
+
+
+
+ 5
+
+
+
+
+
+
+                                            29 November 2017
+
+                                        
+
+
+
+
+
+
+
+
+ 0
+
+
+
+
+
+
+
+
+
+ 4
+
+
+
+
+
+
+
+
+
+ 4
+
+
+
+Equifax CEO quits after massive hack26 SepEquifax hack: Visa and Mastercard flag 200k compromised credit cards15 SepHuge Equifax breach hits 143 million consumers08 SepCompetitive base + commission + benefits13 SepFind your next role:
+267 downloads
+
+131 downloads
+
+732 downloads
+About FinextraCommunity Rules
+
+
+                                        Register for news
+
+                                        
+
+
+
+
+
+
+
+Contact UsEditorialSales SalesRegister for news
+
+
+Register
+
+
+
+
+
+
+
+Follow Us© Finextra Research 2018Terms of usePrivacy Policy"},{"url" : "http://cnet.co/2HBPWYd","title" : "SEC charges former Equifax exec with insider trading after data breach - CNET","data" : "CNET también está disponible en español.Don't show this againThe SEC says former Chief Information Officer Jun Ying knew about Equifax's massive breach and sold his shares before it was publicly announced.A former Equifax executive has been charged with insider trading related to the company's massive breach last year.The Securities and Exchange Commission announced on Wednesday that it filed the charge against Jun Ying, a former chief information officer with Equifax's US branch. He was next in line to be the company's global CIO before he was fired over the breach. Last September, Equifax announced that it suffered a data breach that would affect more than half of the US population, exposing the Social Security numbers, names and addresses of 147 million Americans. The company learned about the breach on July 29, 2017, but did not announce it publicly for nearly three months. Before the public knew about the breach, three executives, including the company's chief financial officer, sold shares worth nearly $1.8 million. Equifax said that executive trio, which didn't include Ying, didn't know about the breach.But Ying, the SEC maintains, allegedly used information about the breach in making his decision on Aug. 28, 2017 to sell shares in Equifax, making more than $950,000. Ying's alleged insider trading happened 10 days before Equifax publicly announced its breach. If he had sold those same shares after the breach was announced, he would have made $117,000 less."As alleged in our complaint, Ying used confidential information to conclude that his company had suffered a massive data breach, and he dumped his stock before the news went public," Richard R. Best, the SEC's Atlanta branch director, said in a statement. The US Attorney's office in Georgia also filed criminal charges against Ying on Tuesday."This defendant took advantage of his position as Equifax's USIS Chief Information Officer and allegedly sold over $950,000 worth of stock to profit before the company announced a data breach that impacted over 145 million Americans," U.S. Attorney Byung J. Pak said in a statement.According to court documents, Equifax executives initially hid the breach from staffers working on the response, including Ying. They disguised it as a "breach opportunity" for an outside company. But by Aug. 25, 2017, Ying was allegedly in the know. On that day, prosecutors say he sent a text to a co-worker alluding to the security issue they were were working on: "Sounds bad. We may be the one breached... starting to put 2 and 2 together." Three days later, at about 10 a.m., Ying, used Bing on an Equifax computer to search the following: "Experian breach," "Experian stock price 9/15/2015," and "Experian breach 2015." He sold his stock less than an hour after his Bing searches, according to court documents. This happened after internal emails were sent to employees from July 25 and Aug. 15, reminding staffers they couldn't trade if they were aware of the breach. When Equifax lawyers officially informed Ying about the breach on Aug. 30, two days after he already sold his shares, they told him that he should "not trade in Equifax securities," according to the SEC's complaint. Ying didn't tell the company he sold his shares until after Sept. 15, when he was offered the position of global CIO, according to he court documents.  Equifax fired Ying on Oct.16, after an internal investigation into his trading. First published at 8:03 a.m. PT.Updated at 9:14 a.m. PT: Adds details from the criminal complaint and SEC court documents.The Smartest Stuff: Innovators are thinking up new ways to make you, and the things around you, smarter.Blockchain Decoded:  CNET looks at the tech powering bitcoin -- and soon, too, a myriad of services that will change your life.Be respectful, keep it clean and stay on topic. We delete comments that violate our policy, which we encourage you to read. Discussion threads can be closed at any time at our discretion."},{"url" : "http://ow.ly/RIDL30iTJGw","title" : "Equifax's data breach is the gift that keeps on taking | NetLib Security","data" : "  This site requires Javascript to be enabled to work correctly. Please enable JavaScript.Every time we think we’re out, they pull us back in.  Just when we’ve seemingly heard the last of the Equifax story, more damning updates come to light.  This time, yet another additional set of people affected by last year’s data breach (2.4 million more) was announced recently, which brings the total number up to around 147.9 million.Perhaps even worse is news of Equifax’s possible playing of both sides of this incident.  Senator Elizabeth Warren (D-Mass.) recently stated that after a five month investigation, she believes it’s entirely possible that Equifax is actually profiting off the breach on the side.  This is due to the fact that Equifax sells credit protection devices, so that if a victim decides to buy credit protection from another entity, that entity “very well may be using Equifax to do the back-office part.”Moreover, Warren states that her investigation found Equifax’s transparency surrounding the breach to be sorely lacking.  House Representative Greg Walden echoed this sentiment, accusing Equifax of merely partial responses to repeated committee requests.As a reminder, the Equifax breach was caused by the organization’s failure to keep its security up to date, allowing external actors to break in.  Often, however, and especially in healthcare organizations, insiders are primarily responsible.  In fact, according to Verizon’s 2018 Protected Health Information Data Breach Report, more than half (58 percent) of healthcare data breaches have internal causes.  The motivations vary among this set: from some form of financial gain (48 percent) to fun and curiosity (31 percent) to sheer convenience (10 percent).Lack of encryption also continues to be a significant problem, primarily in instances like laptop theft (21 percent of PHI breaches overall) or ransomware (70 percent involving malicious code).  The report recommends both long and short-term measures to meet these security vulnerabilities, including encryption, access monitoring, and building strong security into any new Internet of Things devices.Although this presents a serious challenge for the industry (and others), there is reason for optimism.  Infosys recently released a report, “Digital Outlook for Healthcare and Life Sciences Industry,” that places cybersecurity as the most significant digital technology used by healthcare organizations globally (77 percent).  Big data analytics are also a major trend cited in the report (72 percent), but that’s a whole topic on its own.All of these statistics just go to show how much work remains to be done.  No matter the industry, there is no room for shoddy security or poor transparency.  That said, it would be great if House Representative Ted Lieu’s two recent bills regarding credit agency breaches (the “Protecting Consumer Information Act of 2018,” which would “expand the Federal Trade Commission’s enforcement authority;” and the “Ending Forced Arbitration for Victims of Data Breaches Act,” which would do exactly as it says and help consumers “have their day in court”) gained some traction. NetLib® and Encryptionizer® are Registered Trademarks."},{"url" : "https://buff.ly/2tCfHp5","title" : "Checked Your Credit Since the Equifax Hack? —  Krebs on Security","data" : "A recent consumer survey suggests that half of all Americans still haven’t checked their credit report since the Equifax breach last year exposed the Social Security numbers, dates of birth, addresses and other personal information on nearly 150 million people. If you’re in that fifty percent, please make an effort to remedy that soon.Credit reports from the three major bureaus — Equifax, Experian and TransUnion — can be obtained online for free at annualcreditreport.com — the only Web site mandated by Congress to serve each American a free credit report every year.Annualcreditreport.com is run by a Florida-based company, but its data is supplied by the major credit bureaus, which struggled mightily to meet consumer demand for free credit reports in the immediate aftermath of the Equifax breach. Personally, I was unable to order a credit report for either me or my wife even two weeks after the Equifax breach went public: The site just kept returning errors and telling us to request the reports in writing via the U.S. Mail.Based on thousands of comments left here in the days following the Equifax breach disclosure, I suspect many readers experienced the same but forgot to come back and try again. If this describes you, please take a moment this week to order your report(s) (and perhaps your spouse’s) and see if anything looks amiss. If you spot an error or something suspicious, contact the bureau that produced the report to correct the record immediately.Of course, keeping on top of your credit report requires discipline, and if you’re not taking advantage of all three free reports each year you need to get a plan. My strategy is to put a reminder on our calendar to order a new report every four months or so, each time from a different credit bureau.Whenever stories about credit reports come up, so do the questions from readers about the efficacy and value of credit monitoring services. KrebsOnSecurity has not been particularly kind to the credit monitoring industry; many stories here have highlighted the reality that they are ineffective at preventing identity theft or existing account fraud, and that the most you can hope for from them is that they alert you when an ID thief tries to get new lines of credit in your name.But there is one area where I think credit monitoring services can be useful: Helping you sort things out with the credit bureaus in the event that there are discrepancies or fraudulent entries on your credit report. I’ve personally worked with three different credit monitoring services, two of which were quite helpful in resolving fraudulent accounts opened in our names.At $10-$15 a month, are credit monitoring services worth the cost? Probably not on an annual basis, but perhaps during periods when you actively need help. However, if you’re not already signed up for one of these monitoring services, don’t be too quick to whip out that credit card: There’s a good chance you have at least a year’s worth available to you at no cost.If you’re willing to spend the time, check out a few of the state Web sites which publish lists of companies that have had a recent data breach. In most cases, those publications come with a sample consumer alert letter providing information about how to sign up for free credit monitoring. California publishes probably the most comprehensive such lists at this link. Washington state published their list here; and here’s Maryland’s list. There are more.It’s important for everyone to remember that as bad as the Equifax breach was (and it was a dumpster fire all around), most of the consumer data exposed in the breach has been for sale in the cybercrime underground for many years on a majority of Americans. If anything, the Equifax breach may have simply refreshed some of those criminal data stores.That’s why I’ve persisted over the years in urging my fellow Americans to consider freezing their credit files. A security freeze essentially blocks any potential creditors from being able to view or “pull” your credit file, unless you affirmatively unfreeze or thaw your file beforehand.With a freeze in place on your credit file, ID thieves can apply for credit in your name all they want, but they will not succeed in getting new lines of credit in your name because few if any creditors will extend that credit without first being able to gauge how risky it is to loan to you (i.e., view your credit file).Bear in mind that if you haven’t yet frozen your credit file and you’re interested in signing up for credit monitoring services, you’ll need to sign up first before freezing your file. That’s because credit monitoring services typically need to access your credit file to enroll you, and if you freeze it they can’t do that.The previous two tips came from a primer I wrote a few days after the Equifax breach, which is an in-depth Q&A about some of the more confusing aspects of policing your credit, including freezes, credit monitoring, fraud alerts, credit locks and second-tier credit bureaus.
+
+
+ Tags: annualcreditreport.com, credit freeze, credit monitoring services, Equifax breach, Experian, security freeze, TransUnion
+
+
+						This entry was posted on Sunday, March 11th, 2018 at 2:51 pm						and is filed under Latest Warnings, Security Tools.
+
+						You can follow any comments to this entry through the RSS 2.0 feed.
+
+
+
+													Both comments and pings are currently closed.
+
+
+
+						
+
+					
+After freezing your credit with all three bureaus, ask any finance-related organization with which you need to do business which of the three bureaus they use. They will probably need to dig into it and call you back. You only need to “thaw” one frozen bureau at a time. Transunion allowed me a free temporary “thaw” online. (Great job, Transunion!)
+Another company used Equifax (boo, hiss). When I needed that company able to run my credit, instead of having an online option for a “thaw” (I looked; there was no online option), I called their help line and convinced them to give me a free thaw for a few days. Don’t be afraid to get them on the phone to save a few bucks. (In my location, $10 per bureau per freeze, so a temporary thaw at $0 is a good deal and worth my time on the phone, versus spending another $10+ to refreeze.)I am a senior citizen and in talking with other seniors I have found that most of them do not understand how the credit bureaus work.  Most of them have credit cards which they use for incidentals that they buy so as not to carry cash.  I believe this is why very few individuals have check their credit reports.Brian – Will you please update? —Spent an hour trying (successfully) to reach the Talx/ Work Number /Workfarce sic Solutions (=lax privacy/ sharing of our private compensation data) to place the freeze. After 2 disconnections via internal transfers, one failure of security questions, finally got it dun over the phone. Note: Call the Disputes Dept. 866-222-5880! or main number 800-996-7566 opts-1-2-3 to get a human to start the process. Good luck and thanks to Brian!I would not recommend using  annualcreditreport.comI asked for all three and only got Transunion.  Eperian was formatted so that half of each page was cut off even when I printed it (no not my browser) and Equifax won’t deliver a report online so you have to mail a request with ID documents.  So whats the point?  Also I froze all three previously but that did not seem to prevent getting reports!  Maybe the freezes have expired.  Of course the agencies won’t remind you so I guess I should check.That’s because a freeze prevents OTHER people from pulling your reports. Much in the same way that checking your own credit report DOESN’T result in a HP or “hard inquiry”, a freeze does not prevent you from viewing your own reports.All these articles make a fatal mistake, the Equifax breach includes SS#’s Drivers license and all our prior addresses.  None of which are monitored or will ever show up on credit reports. Elizabeth Warren when grilling former Equifax CEO rightly said this is a breach that will haunt Americans for the rest of their lives.Hello Mr Krebs. After the first bad publicity I moved to ClearScore but am now horrified to find that it is an “Official Partner with Equifax”. (Not sure if this will work – I can’t open in any browser: http://api.getblueshift.com/email_browser_view?uid=8b02271f-c551-494b-8c22-9832f479a705&mid=027cef3b-5cb0-4660-a690-cb273adf459d&eid=90bd8040-3f0a-4b0b-b348-bd7790c6ec86)
+It scores 4.5 in Trust Pilot.I understand they get all their info from Equifax so will ClearScore customers be at risk too? (They haven’t made any announcement and never respond to the question.)Try contacting trusthacker543, that’s his g mail account so add at g mail dot com.. Just send him an email and let him know what you want to get done.. He will put you through it all. I can vouch for him. Warm regards.
+Becca.Thanks Brian.  With freezes in place, I had no problem getting my reports thru annualcreditreport.comDitto!Thanks for all you reporting on this. I see several commenters having problems getting a free downloadable report from annualcreditreport.com, but it may be browser related. I too got an error (using Safari on a Mac with Adblock, Ghostery and other protections) that I must snail mail in a form.
+I tried again with Chrome, which I do not have “locked down” and it worked perfectly for Experian and Equifax. Of course, your mileage may vary…Now in Thailand ….had much fraudulent activity on my accounts. I think it may have been from Equifax hack as they are using old cards I haven’t used for years  Also drivers license was stolen.  Had to close all my accounts and auto pay.  Please helpEquifax’s customer service is horrible and they just you the runaround. Til this day, my mother hasn’t received her pin. She’s been waiting since last year.“Child Pornography – Indian Cyber Army In Talk With India today
+In the docket of contributors and consumers of child pornography despite a series of crackdown, India has emerged out to be one of the biggest. In India every 40 seconds and upto 35-38% of porn uploaded is related to children or teenagers; Kerala being on top of the list in uploading such content while Haryana leads in viewing it on mobile.As per 2014 report of a daily newspaper, there has been a 100% increase in cases of publication or transmission of obscene material including child pornography using electronic means in just one year i.e. in between 2012-13 many state that one of the reason for change in the temperament of people and increase in the number of minor rape victims is partially due to child pornography or easy access to such materials.What does this have to do with the article?Hi Brian & Friends,
+I have a simple question that I am torn about. The 3 credit bureaus + Innovis have the option to create online accounts within them to dispute information, pull reports, and so on. Do most of you create online accounts for these websites? I try very hard not to create additional accounts, but then I think if someone
+malicious creates an account in my name then i will not be able to create my account later on. Thoughts? Advice? Thank you –Click image for my skimmer series.A New York Times Bestseller! Badguy uses for your PCTools for a Safer PC Spammers Duke it OutYour email account may be worth far more than you imagine.eBanking Best Practices for BusinessesInnovations from the UndergroundID Protection Services ExaminedThe reasons for its declineFile 'em Before the Bad Guys Can A crash course in carding. Sign up, or Be Signed Up! Finding out is not so easy. ...For Online Safety. 
+
+		© 2018 Krebs on Security. 
+
+		 Powered by WordPress. 
+
+ Privacy Policy
+"},{"url" : "http://zd.net/2HzcyZq","title" : "Former Equifax executive charged with insider trading after data breach | ZDNet","data" : "The SEC accuses the former executive of dumping stock before Equifax made the breach public.
+                                   By Zack Whittaker
+            
+                    
+                    for Zero Day
+        
+                                        |            March 14, 2018 -- 15:49 GMT (08:49 PDT)
+                
+                                                                                            | Topic: Security
+(Image: File photo)A former Equifax executive has been charged with insider trading for dumping his vested stock before the credit agency went public with a massive data breach.Jun Ying, who was slated to become the company's next chief information officer, allegedly used confidential information that the company's systems had been hacked to sell his stock before the news was made public.According to a Justice Department statement, Ying sent a text message to a colleague two weeks before Equifax revealed the hack, in which he said the breach "sounds bad." Three days later, Ying searched the web to research the effect of Experian's 2015 own breach on its stock price.Later that day, Ying excised all his available stock options. The former executive made more than $1 million from the sale, according to a federal complaint, avoiding more than $117,000 in losses.The Securities and Exchange Commission announced the charges Wednesday."Corporate insiders who learn inside information, including information about material cyber intrusions, cannot betray shareholders for their own financial benefit," said Richard Best, director of the SEC's Atlanta regional office, in remarks.Ying was also charged with antifraud provisions.In a brief statement, Equifax spokesperson said:"Upon learning about Mr. Ying's August sale of Equifax shares, we launched a review of his trading activity, concluded he violated our company's trading policies, separated him from the company and reported our findings to government authorities. We are fully cooperating with the DOJ and the SEC, and will continue to do so.""We take corporate governance and compliance very seriously, and will not tolerate violations of our policies," the spokesperson added.Equifax revealed a data breach of more than 147 million Americans, including some British and Canadian consumers. It was the largest single breach last year.But the company was widely criticized for botching its response in the aftermath. Not only did Equifax take four months to disclose the hack, but the breach was later attributed to a vulnerable server that the company had failed to patch earlier in the year. After the hack was eventually disclosed, Equifax struggled to inform its users -- many of which had no idea the company was hoarding data on them in the first place -- if they were vulnerable.There was rampant speculation about three senior executives who sold stock in the weeks after the breach was discovered, but before it was publicly announced. The executives, including Chief Financial Officer John Gamble, collectively made almost $1.8 million from the sale.Equifax said at the time that the executives had "no knowledge that an intrusion had occurred," and it said the sales were part of pre-scheduled trading plans.A special committee of the company's board found in November that the executives did not engage in insider trading.Chief executive Richard Smith stepped down from the company in the wake of the hack.
+
+                        Got a tip?
+                    
+You can send tips securely over Signal and WhatsApp at 646-755–8849. You can also send PGP email with the fingerprint: 4D0E 92F2 E36A EC51 DAAE 5D97 CB8C 15FA EB6C EEA5.
+Read More
+SecurityOnline security 101: Tips for protecting your privacy from hackers and spiesSecurityUS government's "do not buy" list shuts out Russia, ChinaSecurityNew Spectre attack can remotely steal secrets, researchers saySecurityFlaw let researchers snoop on Swann smart security cameras
+Vendors confirm products affected by libssh bug as PoC code pops up on GitHub
+
+								
+																	Red Hat and F5 Networks acknowledge that some products are vulnerable to the libssh authentication bug.
+															
+Audio recording is now disabled by default in OpenBSD
+
+								
+																	OpenBSD 6.4 also ships with Meltdown, Spectre v2, SpectreRSB, L1FT, and Lazy FPU mitigations.
+															
+Tim Cook calls for Bloomberg to retract controversial chip story
+
+								
+																	Apple's chief executive is hoping Bloomberg will "do the right thing" and formally retract its Chinese spy chip story.
+															
+Kaspersky says it detected infections with DarkPulsar, alleged NSA malware
+
+								
+																	Victims located in Russia, Iran, and Egypt; related to nuclear energy, telecommunications, IT, aerospace, and R&D.
+															
+Password and credit card-stealing Azorult malware adds new tricks
+
+								
+																	Malware can now steal more types of cryptocurrecny and comes with other updates, likely in response to a free version being leaked online.
+															
+Google warns Apple: Missing bugs in your security bulletins are 'disincentive to patch'
+
+								
+																	Google's Project Zero has again called Apple out for silently patching flaws.
+															
+Presidential race in Brazil marred by WhatsApp scandal
+
+								
+																	Frontrunner Jair Bolsonaro is involved in accusations over illegal campaigning tactics using the messaging service.
+															
+Windows 10 will banish Spectre slowdowns with Google's Retpoline patch
+
+								
+																	​Google's Retpoline fix for the Spectre Variant 2 flaw helps minimize performance hit on Windows 10 machines.
+															
+DJI website's 'Get the app on Google Play' directs users elsewhere
+
+								
+																	Opinion: At best it's an oversight, at worst it's placing user security and privacy at serious risk.
+															© 2018 CBS Interactive. All rights reserved.
+                    Privacy Policy |
+                    Cookies |
+                    Ad Choice |
+                    Advertise |
+                    Terms of Use |
+                    Mobile User Agreement
+"},{"url" : "http://bit.ly/2GhamGE ","title" : "Equifax’s massive 2017 data breach keeps getting worse - The Washington Post","data" : "Equifax said Thursday that 2.4 million more consumers than previously reported were affected by the massive data breach the company suffered last year, adding to an already stunning toll.This means that as many as 147.9 million consumers have been affected in some way by the breach, which amounts to about half the country.The affected people's compromised information involves partial driver's license data. It does not include Social Security numbers, which was the focus of earlier analyses of the breach and the reason this group of consumers was not identified sooner, according to the credit reporting company.“This is not about newly discovered stolen data,” said Paulino do Rego Barros Jr., Equifax's interim chief executive. “It's about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals.”This is not the first time Equifax has expanded its estimate of the breach's impact, which initially was put at 143 million consumers. In October, the company raised its estimate by 2.5 million, to 145.5 million. The company was dragged to Capitol Hill to answer for its missteps, with former chief executive Richard Smith — who by then had resigned in light of the crisis — accepting responsibility for the breach.Last month, a probe by Sen. Elizabeth Warren (D-Mass.) said the company failed to keep its computer systems adequately up to date and was not forthcoming enough about its description of the damage.“I spent five months investigating the Equifax breach and found the company failed to disclose the full extent of the hack,” Warren said in a statement Thursday. “Enough is enough. We have to start holding the credit reporting industry accountable.”Warren's investigation suggested that consumers' passport numbers had been stolen, but Equifax denies the claim.“We can confirm that passport numbers were an element we examined while conducting the forensic investigation,” the company said, “and we found no evidence that any passport numbers were stolen.”The chairman of the House Energy and Commerce Committee, Rep. Greg Walden (R-Ore.), said Thursday that despite "repeated" requests for documents from Equifax as a part of the committee's own probe, the credit agency has provided only partial responses.“We now are requesting a briefing with Mandiant, the third-party company responsible for investigating the breach,” said Walden and Rep. Robert E. Latta (R-Ohio), who leads a subcommittee on digital commerce and consumer protection. “The American people deserve to know what went wrong, and our investigation will continue in full force until there are answers.”Equifax said Thursday that it will extend offers of free credit monitoring to those who are in the new batch of affected consumers."},{"url" : "https://www.wsj.com/articles/free-credit-freezes-coming-for-all-u-s-consumers-1520505001","title" : "Free Credit Freezes Coming for All U.S. Consumers - WSJ","data" : "October 18, 2018WASHINGTON—Consumers are on track to get one thing from Congress in response to last year’s massive Equifax Inc. hack: free freezes of their data held by the credit-reporting companies.The bipartisan agreement, set to be approved in the Senate by next week as part of a broader banking bill, would require credit-reporting companies to let consumers block access to their credit reports to potential lenders without paying a fee. Freezing access to credit data is a crucial measure consumers can take if they want to protect themselves...
+  WSJ MembershipCustomer ServiceTools & FeaturesAdsMore"},{"url" : "https://buff.ly/2Hj4FqN","title" : "Congress Will Make Credit Freezes Free for All in Belated Response to Equifax Breach","data" : "Congress is set to finally do something that will benefit US consumers in response to the Equifax breach last year—beyond excoriating the company’s executives on live television. Yet, as with everything, it will come at a cost.As many as 17 Democrats are lending their votes to a Republican banking bill that will scale back sweeping reforms passed in the wake of the 2008 financial crisis by rolling back or dismantling parts of Dodd-Frank. Known as the Crapo bill—after Banking Committee Chairman Mike Crapo, Republican of Idaho—the legislation includes a bipartisan agreement that will enable consumers to initiate credit freezes at no charge.AdvertisementCredit report agencies, like Equifax, will lose a source of revenue in the deal. But not everyone is pleased. Some consumer advocates argue the bill may stymie the efforts of some states’ to pass more stringent credit-freeze requirements. Only eight states at present, however, guarantee consumers free access to credit freezes—a mechanism that prevents lenders from accessing credit reports, thus hindering identity thieves trying to get credit or open accounts in victims’ names.Free credit freezes were among the bevy of solutions tossed around in Congress last year in response to the Equifax breach. Others included creating minimum data security standards for credit reporting agencies—Equifax, Experian, and TransUnion being the main three—and increasing Federal Trade Commission oversight of security practices. Some lawmakers also sought to bar credit firms from forcing consumers into arbitration, which hinder class-action lawsuits in response to negligent practices. Notably, the credit-freeze agreement has zero implications for the industry’s security standards. Equifax’s own negligence was the biggest contributing factor to the breach, the largest of its kind ever reported, resulting in the theft of more than 145 million consumers’ personal data, including Social Security numbers. AdvertisementSocial Security numbers have long been used as proof-of-identity in exchanges with financial institutions, among other industries. The numbers have been treated more or less as a type of passphrase—one that most consumers are unable to change, compromise notwithstanding. During a hearing before the Senate Commerce, Science and Transportation Committee in November, Entrust Datacard CEO Todd Wilkinson submitted that Social Security numbers should no longer be used as the primary means of identifying consumers, portraying them as an antiquated security measure that could only lead to further abuse.Sen. Mark Warner, a Democrat of Virginia and chief sponsor of the banking bill, told the Wall Street Journal Thursday that he wished it did more to bridle the credit firms. “They have all of our personal information,” he said. “And there are not clear standards and clear penalties.”AdvertisementThe banking bill carrying the credit-freeze agreement—also known as the Economic Growth, Regulatory Relief and Consumer Protection Act—has been denounced as a “gift to Wall Street” by progressive Democrats  pointing to two dozen of the nation’s top banks, where protections achieved through Dodd-Frank stand to be relaxed or dissolved entirely.“The Senate—with the support of some Democrats—is set to start debate on a bill to roll back regulations on the same big banks we bailed out a few years ago,” Sen. Elizabeth Warren, Democrat of Massachusetts, told reporters on Tuesday, according to CNN. “If we lose the final vote next week, we’ll be paving the way for the next big crash.”Proponents of the bill, however, argue that the legislation will provide much needed relief to smaller banks that have faced rising costs in the wake of Dodd-Frank, leading to a worrying increase in bank acquisition activity.AdvertisementWith the help of the Democrats, the bill is a shoo-in to pass next week after a formal debate.Reporter at Gizmodo."},{},{"url" : "http://on.wsj.com/2tn83iw","title" : "Free Credit Freezes Coming for All U.S. Consumers - WSJ","data" : "October 18, 2018WASHINGTON—Consumers are on track to get one thing from Congress in response to last year’s massive Equifax Inc. hack: free freezes of their data held by the credit-reporting companies.The bipartisan agreement, set to be approved in the Senate by next week as part of a broader banking bill, would require credit-reporting companies to let consumers block access to their credit reports to potential lenders without paying a fee. Freezing access to credit data is a crucial measure consumers can take if they want to protect themselves...
+  WSJ MembershipCustomer ServiceTools & FeaturesAdsMore"},{"url" : "http://ow.ly/ckBa30iPmSh ","title" : "Equifax's data breach is the gift that keeps on taking | NetLib Security","data" : "  This site requires Javascript to be enabled to work correctly. Please enable JavaScript.Every time we think we’re out, they pull us back in.  Just when we’ve seemingly heard the last of the Equifax story, more damning updates come to light.  This time, yet another additional set of people affected by last year’s data breach (2.4 million more) was announced recently, which brings the total number up to around 147.9 million.Perhaps even worse is news of Equifax’s possible playing of both sides of this incident.  Senator Elizabeth Warren (D-Mass.) recently stated that after a five month investigation, she believes it’s entirely possible that Equifax is actually profiting off the breach on the side.  This is due to the fact that Equifax sells credit protection devices, so that if a victim decides to buy credit protection from another entity, that entity “very well may be using Equifax to do the back-office part.”Moreover, Warren states that her investigation found Equifax’s transparency surrounding the breach to be sorely lacking.  House Representative Greg Walden echoed this sentiment, accusing Equifax of merely partial responses to repeated committee requests.As a reminder, the Equifax breach was caused by the organization’s failure to keep its security up to date, allowing external actors to break in.  Often, however, and especially in healthcare organizations, insiders are primarily responsible.  In fact, according to Verizon’s 2018 Protected Health Information Data Breach Report, more than half (58 percent) of healthcare data breaches have internal causes.  The motivations vary among this set: from some form of financial gain (48 percent) to fun and curiosity (31 percent) to sheer convenience (10 percent).Lack of encryption also continues to be a significant problem, primarily in instances like laptop theft (21 percent of PHI breaches overall) or ransomware (70 percent involving malicious code).  The report recommends both long and short-term measures to meet these security vulnerabilities, including encryption, access monitoring, and building strong security into any new Internet of Things devices.Although this presents a serious challenge for the industry (and others), there is reason for optimism.  Infosys recently released a report, “Digital Outlook for Healthcare and Life Sciences Industry,” that places cybersecurity as the most significant digital technology used by healthcare organizations globally (77 percent).  Big data analytics are also a major trend cited in the report (72 percent), but that’s a whole topic on its own.All of these statistics just go to show how much work remains to be done.  No matter the industry, there is no room for shoddy security or poor transparency.  That said, it would be great if House Representative Ted Lieu’s two recent bills regarding credit agency breaches (the “Protecting Consumer Information Act of 2018,” which would “expand the Federal Trade Commission’s enforcement authority;” and the “Ending Forced Arbitration for Victims of Data Breaches Act,” which would do exactly as it says and help consumers “have their day in court”) gained some traction. NetLib® and Encryptionizer® are Registered Trademarks."},{"url" : "http://bit.ly/2FCdyOX ","title" : "Equifax’s massive 2017 data breach keeps getting worse - The Washington Post","data" : "Equifax said Thursday that 2.4 million more consumers than previously reported were affected by the massive data breach the company suffered last year, adding to an already stunning toll.This means that as many as 147.9 million consumers have been affected in some way by the breach, which amounts to about half the country.The affected people's compromised information involves partial driver's license data. It does not include Social Security numbers, which was the focus of earlier analyses of the breach and the reason this group of consumers was not identified sooner, according to the credit reporting company.“This is not about newly discovered stolen data,” said Paulino do Rego Barros Jr., Equifax's interim chief executive. “It's about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals.”This is not the first time Equifax has expanded its estimate of the breach's impact, which initially was put at 143 million consumers. In October, the company raised its estimate by 2.5 million, to 145.5 million. The company was dragged to Capitol Hill to answer for its missteps, with former chief executive Richard Smith — who by then had resigned in light of the crisis — accepting responsibility for the breach.Last month, a probe by Sen. Elizabeth Warren (D-Mass.) said the company failed to keep its computer systems adequately up to date and was not forthcoming enough about its description of the damage.“I spent five months investigating the Equifax breach and found the company failed to disclose the full extent of the hack,” Warren said in a statement Thursday. “Enough is enough. We have to start holding the credit reporting industry accountable.”Warren's investigation suggested that consumers' passport numbers had been stolen, but Equifax denies the claim.“We can confirm that passport numbers were an element we examined while conducting the forensic investigation,” the company said, “and we found no evidence that any passport numbers were stolen.”The chairman of the House Energy and Commerce Committee, Rep. Greg Walden (R-Ore.), said Thursday that despite "repeated" requests for documents from Equifax as a part of the committee's own probe, the credit agency has provided only partial responses.“We now are requesting a briefing with Mandiant, the third-party company responsible for investigating the breach,” said Walden and Rep. Robert E. Latta (R-Ohio), who leads a subcommittee on digital commerce and consumer protection. “The American people deserve to know what went wrong, and our investigation will continue in full force until there are answers.”Equifax said Thursday that it will extend offers of free credit monitoring to those who are in the new batch of affected consumers."},{},{"url" : "https://buff.ly/2F2jT2H","title" : "Equifax Says 2.4 Million More People Were Impacted By Huge 2017 Breach : The Two-Way : NPR","data" : "
+
+      Merrit Kennedy
+    
+
+                Equifax says the newly identified users had some driver's license information stolen but not their Social Security numbers.
+                
+                
+                    
+                    Mike Stewart/AP
+                    
+                
+hide caption
+Equifax says the newly identified users had some driver's license information stolen but not their Social Security numbers.Equifax has disclosed that an additional 2.4 million people were impacted by a massive cybersecurity breach last year, bringing the total to about 148 million people.The credit reporting agency says the new consumers were identified during forensic examination of the breach. They were previously unidentified, the company says, because their Social Security numbers were not stolen.Their names and some of their driver's license information was taken, however. According to the company, "in the vast majority of cases, it did not include consumers' home addresses, or their respective driver's license states, dates of issuance, or expiration dates."Equifax says it will directly notify these 2.4 million people "and will offer identity theft protection and credit file monitoring services at no cost to them."The company has struggled to rebuild public trust after the revelation of the breach and what is widely perceived as a bungled response.For example, several times after the cyberattack, the company's official Twitter account mistakenly directed worried customers to a fake phishing site.Lawmakers also have been highly critical of the company's response, and Thursday's revelation is prompting new scrutiny."Some lawmakers say the company has delayed and given only partial responses to questions related to a House Commerce Committee Investigation," NPR's Chris Arnold told our Newscast unit. "They are now requesting a briefing from a company Equifax hired to do its own investigation of the breach."Last week, Democrats from the House Committee on Oversight and Government Reform pressed Equifax to extend their free identity theft protection and credit file monitoring from one year to three."Given the sensitive nature of the personal information that was stolen — and the ability of criminals to store and use that information for years to come — we believe that the millions of U.S. consumers whose personal information was compromised in the Equifax data breach should receive the most robust form of credit protection and identity theft services available," says the letter to Paulino Barros, Equifax's interim CEO.As NPR's Colin Dwyer reported that when the breach was first disclosed, "the number of American consumers affected constitutes about 44 percent of the U.S. population."But there is good reason to think that many of those impacted may not be aware of it. A new survey from CreditCards.com found that 50 percent of adults surveyed have not checked their credit scores and reports since the breach.And "twenty percent of all respondents have heard little or nothing about the Equifax breach, including 46 percent of those aged 18-37," according to the survey results.Worried your data has been exposed? NPR's Yuki Noguchi put together this set of tips for protecting yourself.The Two-Way was an NPR blog that ran from 2009 to 2018.The Two-Way is the place to come for breaking news, analysis and for stories that are just too interesting — or too entertaining — to pass up.NPR thanks our sponsorsBecome an NPR sponsor"},{},{"url" : "https://www.wired.com/story/equifax-found-millions-more-people-affected-2017-breach/?mbid=social_twitter_onsiteshare","title" : "Newly Found Equifax Victims, Apple Vulnerabilities, and More Security News This Week | WIRED","data" : "It was a wild west week in security, as GitHub succeeded in surviving the biggest DDoS attack ever (1.35 terabits per second!) and analysts scrutinized the "false flag" techniques Russian hackers have used in their attacks to shift blame and throw off investigators. Researchers found an unexpected method for executing phishing attacks against some "unphishable" Yubikey two-factor authentication tokens. (Not the one included in WIRED's subscription package.)  And the Supreme Court began hearing arguments in US v. Microsoft, which will have major implications for how your data is stored and accessed by governments.The shenanigans didn't stop there. On Sunday, House Democrats released a dramatic rebuttal to the controversial "Nunes memo," in which Republicans asserted last month that law enforcement officials inappropriately obtained a surveillance warrant against former Trump campaign advisor Carter Page. Researchers found that websites using "session replay" tools to track users risk exposing sensitive data like passwords in the process, and Facebook quietly started notifying users about its expanded face recognition features—here's how to turn them off if you don't want to feed biometric data to the social network. Meanwhile, disinformation campaigns are fueling conspiracy theories about the Parkland shooting and the malicious cryptojacking trend rages on.And, incredibly, there's more. Every week we round up all the news we didn’t break or cover in depth. Click on the headlines to read the full stories. And stay safe out there.In September, the credit-monitoring firm Equifax disclosed a massive breach that exposed personal information for what the company thought at the time was 143 million people. About six weeks later, Equifax increased its estimate to 145.5 million people potentially impacted. On Thursday, the company threw in another 2.5 million victims, bringing the new total to 147.9 million. The newest additions had their names and a portion of their US driver's license numbers exposed, so the situation isn't as dire for them as it was for the millions of people whose birth dates, addresses, and Social Security numbers were affected. But any details can help criminals build profiles for identity theft. And 2.4 million people is...really a lot of people to only just now have noticed.The Israeli digital forensics firm Cellebrite now quietly claims that it can unlock mobile Apple devices running iOS 11 (even the most current 11.2.6), including the iPhone X. The US government already contracts with Cellebrite for device unlocks, which only cost $1,500 a pop, according to Forbes. Clients must physically send the devices they want to break into to Cellebrite's Advanced Unlocking and Extraction Services lab. The techniques Cellebrite uses to get around iOS 11's data privacy protections are still unknown, but the company claims that it can infiltrate "Apple iOS devices and operating systems, including iPhone, iPad, iPad mini, iPad Pro and iPod touch, running iOS 5 to iOS 11." The services are a boon to law enforcement, but present a real dilemma for Apple's mobile customers, especially those who choose Apple products because of their strong security and privacy protection record.The German government fought back this week against a powerful digital attack that breached high-security foreign and defense ministry networks and potentially exposed important data. "The loss of sensitive information amounts to significant damage on its own," conservative lawmaker Armin Schuster told the press. "But we can say that the German government is trying, as far as we know today, to keep the process under control." Some reports indicated that the attack had gone on for as long as a year before the government detected it in December. The German government has not yet offered an official attribution for who was behind the attacks. Some officials have hinted, though, that it may stem from Russia, specifically either the group known as Snake or the Advanced Persistent Threat 28 group called Fancy Bear, which famously breached the Democratic National Committee in the United States in 2016.The data analysis firm Palantir, known for its law enforcement connections and penchant for developing surveillance tools, has collaborated on clandestine predictive policing with the New Orleans Police Department since 2012, The Verge reported this week. The company contributed software that tracked the social media use, criminal histories, and gang affiliations of people of interest in New Orleans and attempted to predict things like which of them might commit violent crimes or be victims of crimes. The NOPD has extended the collaboration three times, and it may have expired on February 21 or been renewed again. The Verge uncovered indications that even when evidence gleaned through the Palantir platform informed an investigation, officials hid its existence from evidence submitted for trials.It seems like every time you turn around there's a new breach of personal information. Follow these steps to minimize the damage.CNMN Collection© 2018 Condé Nast. All rights reserved.Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement (updated 5/25/18) and Privacy Policy and Cookie Statement (updated 5/25/18). Your California Privacy Rights. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices."},{"url" : "https://buff.ly/2oKQ8xl","title" : "Equifax finds additional 2.4 million impacted by 2017 breach | abc7news.com","data" : "WATCH LIVEEquifax said Thursday that an additional 2.4 million Americans were impacted by last year's data breach. (AP Photo/Mike Stewart)"},{"url" : "http://n.pr/2taUIcG","title" : "Equifax Says 2.4 Million More People Were Impacted By Huge 2017 Breach : The Two-Way : NPR","data" : "
+
+      Merrit Kennedy
+    
+
+                Equifax says the newly identified users had some driver's license information stolen but not their Social Security numbers.
+                
+                
+                    
+                    Mike Stewart/AP
+                    
+                
+hide caption
+Equifax says the newly identified users had some driver's license information stolen but not their Social Security numbers.Equifax has disclosed that an additional 2.4 million people were impacted by a massive cybersecurity breach last year, bringing the total to about 148 million people.The credit reporting agency says the new consumers were identified during forensic examination of the breach. They were previously unidentified, the company says, because their Social Security numbers were not stolen.Their names and some of their driver's license information was taken, however. According to the company, "in the vast majority of cases, it did not include consumers' home addresses, or their respective driver's license states, dates of issuance, or expiration dates."Equifax says it will directly notify these 2.4 million people "and will offer identity theft protection and credit file monitoring services at no cost to them."The company has struggled to rebuild public trust after the revelation of the breach and what is widely perceived as a bungled response.For example, several times after the cyberattack, the company's official Twitter account mistakenly directed worried customers to a fake phishing site.Lawmakers also have been highly critical of the company's response, and Thursday's revelation is prompting new scrutiny."Some lawmakers say the company has delayed and given only partial responses to questions related to a House Commerce Committee Investigation," NPR's Chris Arnold told our Newscast unit. "They are now requesting a briefing from a company Equifax hired to do its own investigation of the breach."Last week, Democrats from the House Committee on Oversight and Government Reform pressed Equifax to extend their free identity theft protection and credit file monitoring from one year to three."Given the sensitive nature of the personal information that was stolen — and the ability of criminals to store and use that information for years to come — we believe that the millions of U.S. consumers whose personal information was compromised in the Equifax data breach should receive the most robust form of credit protection and identity theft services available," says the letter to Paulino Barros, Equifax's interim CEO.As NPR's Colin Dwyer reported that when the breach was first disclosed, "the number of American consumers affected constitutes about 44 percent of the U.S. population."But there is good reason to think that many of those impacted may not be aware of it. A new survey from CreditCards.com found that 50 percent of adults surveyed have not checked their credit scores and reports since the breach.And "twenty percent of all respondents have heard little or nothing about the Equifax breach, including 46 percent of those aged 18-37," according to the survey results.Worried your data has been exposed? NPR's Yuki Noguchi put together this set of tips for protecting yourself.The Two-Way was an NPR blog that ran from 2009 to 2018.The Two-Way is the place to come for breaking news, analysis and for stories that are just too interesting — or too entertaining — to pass up.NPR thanks our sponsorsBecome an NPR sponsor"},{"url" : "https://buff.ly/2FcYAeZ","title" : "Equifax Breach Could be Costliest Yet at $439M; Insurance to Cover $125M","data" : "Equifax Inc. said it expects costs related to its massive 2017 data breach to surge by $275 million this year, suggesting the incident at the credit reporting bureau could turn out to be the most costly hack in corporate history.The projection, which was disclosed on a Friday morning earnings conference call, is on top of $164 million in pretax costs posted in the second half of 2017. That brings expected breach-related costs through the end of this year to $439 million, some $125 million of which Equifax said will be covered by insurance.“It looks like this will be the most expensive data breach in history,” said Larry Ponemon, chairman of Ponemon Institute, a research group that tracks costs of cyber attacks.Total costs of the breach, which compromised sensitive data of more than 147 million consumers, could be “well over $600 million,” after including costs to resolve government investigations into the incident and civil lawsuits against the firm, he said.Equifax on Thursday reported fourth-quarter profit that topped Wall Street forecasts and disclosed that it uncovered an additional 2.4 million people whose data was stolen in the attack.Its shares rose nearly 4 percent to $115.82 on Friday on the higher-than-expected earnings. They have lost about a quarter of their value since Equifax disclosed the incident in early September.Equifax said in September that hackers had stolen personally identifiable information of U.S., UK and Canadian consumers, including names, Social Security numbers, birth dates, addresses driver’s license and credit card numbers.That disclosure prompted outrage from politicians and consumer advocates around the world, a string of government probes into company and the departure of top executives.Equifax warned in regulatory filing on Thursday that further analysis could identify more consumers or additional types of data stolen in the hack.This year’s costs include technology and security upgrades, legal fees and free identity theft services to consumers whose data was stolen, the company said in a conference call.(Reporting by John McCrank in New York and Jim Finkle in Toronto; editing by Chizu Nomiyama and Meredith Mazzilli)Was this article valuable?Thank you! Please tell us what we can do to improve this article.Thank you! % of people found this article valuable. Please tell us what you liked about it.Here are more articles you may enjoy.Get automatic alerts for this topic.Your email address will not be published. Required fields are marked *Name *Email *Comment
+
+
+
+Notify me of comments via e-mailWe have updated our privacy policy to be more clear and meet the new requirements of the GDPR. By continuing to use our site, you accept our revised Privacy Policy."},{"url" : "http://bit.ly/2CXaPdN ","title" : "Equifax’s massive 2017 data breach keeps getting worse - The Washington Post","data" : "Equifax said Thursday that 2.4 million more consumers than previously reported were affected by the massive data breach the company suffered last year, adding to an already stunning toll.This means that as many as 147.9 million consumers have been affected in some way by the breach, which amounts to about half the country.The affected people's compromised information involves partial driver's license data. It does not include Social Security numbers, which was the focus of earlier analyses of the breach and the reason this group of consumers was not identified sooner, according to the credit reporting company.“This is not about newly discovered stolen data,” said Paulino do Rego Barros Jr., Equifax's interim chief executive. “It's about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals.”This is not the first time Equifax has expanded its estimate of the breach's impact, which initially was put at 143 million consumers. In October, the company raised its estimate by 2.5 million, to 145.5 million. The company was dragged to Capitol Hill to answer for its missteps, with former chief executive Richard Smith — who by then had resigned in light of the crisis — accepting responsibility for the breach.Last month, a probe by Sen. Elizabeth Warren (D-Mass.) said the company failed to keep its computer systems adequately up to date and was not forthcoming enough about its description of the damage.“I spent five months investigating the Equifax breach and found the company failed to disclose the full extent of the hack,” Warren said in a statement Thursday. “Enough is enough. We have to start holding the credit reporting industry accountable.”Warren's investigation suggested that consumers' passport numbers had been stolen, but Equifax denies the claim.“We can confirm that passport numbers were an element we examined while conducting the forensic investigation,” the company said, “and we found no evidence that any passport numbers were stolen.”The chairman of the House Energy and Commerce Committee, Rep. Greg Walden (R-Ore.), said Thursday that despite "repeated" requests for documents from Equifax as a part of the committee's own probe, the credit agency has provided only partial responses.“We now are requesting a briefing with Mandiant, the third-party company responsible for investigating the breach,” said Walden and Rep. Robert E. Latta (R-Ohio), who leads a subcommittee on digital commerce and consumer protection. “The American people deserve to know what went wrong, and our investigation will continue in full force until there are answers.”Equifax said Thursday that it will extend offers of free credit monitoring to those who are in the new batch of affected consumers."},{"url" : "http://on.wsj.com/2FQdtVG ","title" : "Equifax Identifies Additional 2.4 Million Affected by 2017 Breach - WSJ","data" : "October 18, 2018 Equifax Inc. said more U.S. consumers were affected by its large data breach last year than originally disclosed.The company on Thursday said that it identified about 2.4 million U.S. consumers whose names and partial driver’s license information were stolen. The company said the consumers affected “were not in the previously identified” population of cyberattack victims.That...
+  WSJ MembershipCustomer ServiceTools & FeaturesAdsMore"},{"url" : "http://fxn.ws/2HVQWHw","title" : "Equifax breach worsens, sparking more concerns about consumers' data | Fox News","data" : "
+      This material may not be published, broadcast, rewritten,
+      or redistributed. ©2018 FOX News Network, LLC. All rights reserved.
+      All market data delayed 20 minutes.
+    
+          Equifax confirmed the initial cybersecurity incident in September 2017, noting that criminals exploited a U.S. website application vulnerability to gain access to certain files.
+          (Reuters)Equifax has confirmed that the massive data breach it announced last year is larger than previously thought, affecting an additional 2.4 million U.S. consumers.New details of the breach were announced by the credit reporting company Thursday, taking the total number of victims to 147.9 million. The company says the additional consumers only had their names and part of their driver's license numbers stolen, unlike the original 145.5 million Americans who had their Social Security numbers impacted. Attackers were unable to get the state where the license was issued, the date of issuance or its expiration date.“This information was partial because, in the vast majority of cases, it did not include consumers' home addresses, or their respective driver's license states, dates of issuance, or expiration dates,” the company explained in a statement.EQUIFAX COULD MAKE MONEY FROM ITS OWN BREACH; 2.4 MILLION MORE ARE EXPOSEDEquifax confirmed the initial cybersecurity incident in September 2017, noting that criminals exploited a U.S. website application vulnerability to gain access to certain files.It remains the largest data breach of personal information in history.Security experts have voiced their concern about the worsening scale of the data breach.Tom Kemp, CEO of identity and access management specialist Centrify, described the 147.9 million affected consumers as an “alarming” number. “Despite an increase in security investments, breaches continue to rise," Kemp said in an email to Fox News. "The fact is, four out of five breaches (including those experienced by Equifax, Yahoo!, Uber, HBO, and more) exploit compromised identities, stolen passwords or privileged access.”He added: “Yet despite cybercriminals’ focus on identity, most organizations aren’t making the clear connection between breaches and compromised credentials.”BIGGEST DDOS ATTACK ON RECORD HITS GITHUB“As we thought, the Equifax breach was way worse than we all knew,” added John Callahan, CTO of biometric authentication company Veridium, in an email to Fox News. “When it comes to data breaches, few compare to the damage that has, and likely will continue to come from information leaked.”One answer to consumers’ cybersecurity woes could be the emerging concept of self-sovereign identity, according to Callahan. Self-sovereign identity, which uses the highly secure blockchain data protocol, aims to give users control over their identity data, regardless of where it is stored.In a recent blog post, Veridium used the example of a travel booking website only needing someone's passport and payment information to complete a purchase. “Blockchain could allow the airline company to request the information that it needs– and only the information that it needs– and then allow you to transmit that information securely.”HACKERS HIJACK TESLA SYSTEM IN BOLD CRYPTOCURRENCY ATTACKEquifax says it will reach out to all newly impacted consumers and will provide the same credit monitoring and identity theft protection services they have been offering to the original victims.The Associated Press contributed to this article. Follow James Rogers on Twitter @jamesjrogersThis material may not be published, broadcast, rewritten, or redistributed. ©2018 FOX News Network, LLC. All rights reserved. All market data delayed 20 minutes."},{"url" : "https://buff.ly/2F8cqz6","title" : "Equifax finds more victims of 2017 breach - BBC News","data" : "Share this withEmailFacebookMessengerMessengerTwitterPinterestWhatsAppLinkedInCopy this linkThese are external links and will open in a new windowThe massive data breach suffered by credit-rating company Equifax hit more people than previously thought, the company has reported.In September last year Equifax said it had discovered that 145 million US customers may have had their information stolen.Its investigation into the breach has revealed that the details of a further 2.4 million Americans went astray.Continuing analysis of stolen data had helped identify new victims, it said."Equifax will notify these newly identified US consumers directly, and will offer identity-theft protection and credit-file monitoring services at no cost to them," it said in a statement.Equifax made the announcement on the same day that it reported its full-year earnings. The firm said the breach cost more than $114m last year, after insurance payouts, but the company's profits remained healthy, helped by a strong performance in its international business and new tax cuts that the US approved last year.The firm reported $587.3m in profits last year, up 20% from 2016. In the fourth quarter, profits were $172.3m, rising 40% compared to the same period in 2016.In 2017, Equifax said an internal investigation had uncovered signs of unauthorised access to data including names, addresses and social security numbers. And the company set up a website for people to learn if they were among those whose information had been accessed.Equifax was widely criticised after the breach and its then chief executive publicly apologised for failing to protect information and for taking so long to let victims know their data had been compromised.Several senior executives, including the chief executive, subsequently left the company because of the breach.Equifax holds data on more than 820 million consumers and 91 million businesses worldwide. It does credit checks, ID theft monitoring and offers job verification services.Protesters calling for a referendum on the final deal have attended a mass rally in central London.Powerful moments that inspired musicSign up for our newsletter"},{"url" : "http://reut.rs/2F6W89S","title" : "
+                Equifax breach could be most costly in corporate history | Reuters","data" : "3 Min ReadNEW YORK/TORONTO (Reuters) - Equifax Inc (EFX.N) said it expects costs related to its massive 2017 data breach to surge by $275 million this year, suggesting the incident at the credit reporting bureau could turn out to be the most costly hack in corporate history.  The projection, which was disclosed on a Friday morning earnings conference call, is on top of $164 million in pretax costs posted in the second half of 2017. That brings expected breach-related costs through the end of this year to $439 million, some $125 million of which Equifax said will be covered by insurance. “It looks like this will be the most expensive data breach in history,” said Larry Ponemon, chairman of Ponemon Institute, a research group that tracks costs of cyber attacks.  Total costs of the breach, which compromised sensitive data of more than 147 million consumers, could be “well over $600 million,” after including costs to resolve government investigations into the incident and civil lawsuits against the firm, he said.  Equifax on Thursday reported fourth-quarter profit that topped Wall Street forecasts and disclosed that it uncovered an additional 2.4 million people whose data was stolen in the attack. Its shares rose nearly 4 percent to $115.82 on Friday on the higher-than-expected earnings. They have lost about a quarter of their value since Equifax disclosed the incident in early September.  Equifax said in September that hackers had stolen personally identifiable information of U.S., UK and Canadian consumers, including names, Social Security numbers, birth dates, addresses driver’s license and credit card numbers. That disclosure prompted outrage from politicians and consumer advocates around the world, a string of government probes into company and the departure of top executives. Equifax warned in regulatory filing on Thursday that further analysis could identify more consumers or additional types of data stolen in the hack.  This year’s costs include technology and security upgrades, legal fees and free identity theft services to consumers whose data was stolen, the company said in a conference call.  (This story corrects fourth paragraph to show that breach compromised data of more than 147 million consumers, not 247 million consumers.) Reporting by John McCrank in New York and Jim Finkle in Toronto; editing by Chizu Nomiyama and Meredith MazzilliAll quotes delayed a minimum of 15 minutes. See here for a complete list of exchanges and delays.© 2018 Reuters. All Rights Reserved."},{"url" : "https://buff.ly/2tcaTqt","title" : "Equifax Could Make Cash From Its Massiver Security Breach | Digital Trends","data" : "Atlanta-based Equifax disclosed in September that a “cybersecurity incident” exposed the data of approximately 143 million U.S.-based customers. Six months later, the credit-rating agency added another 2.4 million U.S.-based customers to that number as part of an ongoing analysis. But while the company appears to be apologetic and embarrassed over the hack on the outside, Senator Elizabeth Warren, D-MA, believes the company could actually generate cash from the breach. How? Because it sells credit protection “devices,” or services. Even if customers swear they will never do business with Equifax again after the 2017 breach, third-party credit protection services may still use Equifax. That means the company is reeling in the big bucks from its own breach no matter where customers land. But Senator Warren and Senator Mark Warner, D-VA, want to change that. According to their proposal called “strict liability,” every customer gets $100 for the theft of the first piece of data, and $50 for every piece of data stolen thereafter up to half the value of the company. They believe this will push credit-rating agencies to get serious about investing in what is needed to protect Americans and their personal information. If not, we can count on another massive Equifax-style breach in the near future. “It’s hard. It’s flat. It’s easy to read,” she said. “And the point is to get the credit-rating agencies to take the right level of security. They take the right level of security, they invest enough in security, then the American people will be protected.” After a five-month investigation, Warren released a report detailing Equifax’s shortcomings regarding data protection. She details how security researchers warned of a vulnerability in the website, and how the company never confirmed that administrators actually patched the security hole. The Department of Homeland Security and external experts even warned Equifax of various vulnerabilities before the breach. Smaller break-ins took place prior to 2017. What’s interesting is Equifax’s fight with the Internal Revenue Service (IRS). According to the report, Equifax essentially coerced the IRS into signing a new $7.2 million contract by using “federal contracting loopholes” knowing full well it had security issues. But the IRS eventually canceled the contract after discovering the additional security weaknesses that could expose the sensitive information of taxpayers. “We found out that Equifax failed to follow its own internal requirements for notifying consumers following the breach of sensitive data,” she said. “And we found that Equifax’s entire cybersecurity apparatus was inadequate to protect American consumers.” The 2017 hack exposed credit card numbers, Social Security numbers, names, birth dates, addresses, and partial driver’s license numbers. Equifax discovered the network breach on July 29 but didn’t make the data leak known until the following September. The hack took place sometime between May and July of that year. “We put [our investigation] together from a lot of different places and found out that Equifax, quite simply, had not told the whole story to the American people,” Warren said. “What they did was worse, a whole lot worse, than they originally admitted.” "},{"url" : "http://bit.ly/2FjCpXW","title" : "Equifax Says 2.4 Million More People Impacted By Massive 2017 Breach | The first stop for security news | Threatpost","data" : "NewsletterJoin thousands of people who receive the latest breaking cybersecurity news every day.The administrator of your personal data will be Threatpost, Inc., 500 Unicorn Park, Woburn, MA 01801. Detailed information on the processing of personal data can be found in the privacy policy. In addition, you will find them in the message confirming the subscription to the newsletter.The administrator of your personal data will be Threatpost, Inc., 500 Unicorn Park, Woburn, MA 01801. Detailed information on the processing of personal data can be found in the privacy policy. In addition, you will find them in the message confirming the subscription to the newsletter.Share this article:Equifax said that an additional 2.4 million Americans have been impacted by a 2017 data breach, bringing the total of those implicated to around 148 million people.Equifax said that an additional 2.4 million Americans have had their personal data stolen as part of the company’s massive 2017 data breach, including their names and some of their driver’s license information.The additional identified victims bring the total of those implicated in what has become the largest data breach of personal information in history to around 148 million people.The consumer credit reporting agency on Thursday said that as part of an “ongoing analysis” it found that these newly identified victims’ names and partial driver’s license numbers were stolen by attackers. However, unlike the previous 145.5 million people who have been identified to date as impacted by the 2017 breach, the Social Security numbers of these additional victims were not impacted.Attackers were also unable to reach additional license details for this latest slew of impacted victims – including the state where their licenses were issued and the expiration dates.“This is not about newly discovered stolen data,” Paulino do Rego Barros, Jr., interim chief executive officer of Equifax, said in a statement. “It’s about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals.”Equifax said the new victims were not previously identified because their Social Security numbers were not stolen together with their driver’s license information.“The methodology used in the company’s forensic examination of last year’s cybersecurity incident leveraged Social Security Numbers (SSNs) and names as the key data elements to identify who was affected by the cyberattack,” said the company in a statement. “This was in part because forensics experts had determined that the attackers were predominately focused on stealing SSNs.”Equifax said it will notify the newly identified consumers directly by U.S. Postal mail, “and will offer identity theft protection and credit file monitoring services at no cost to them,” said the company.The company did not respond to requests for further comment from Threatpost about its current ongoing analysis of the breach.Ongoing Breach DisclosuresEquifax has been under public scrutiny since September, that’s when it first disclosed the data breach after issuing a statement at the time that cybercriminals had exploited an unnamed “U.S. website application vulnerability to gain access to certain files” from May through July 2017. Equifax said it discovered the breach on July 29. The breach enabled criminals to access sensitive data like social security numbers, birth dates, and license numbers.Later, during Equifax’s testimony in October before the U.S. House Committee on Energy and Commerce Subcommittee on Digital Commerce and Consumer Protection, it was revealed that Equifax was notified in March that the breach was tied to an unpatched Apache Struts vulnerability, CVE-2017-5638. It was established that while Equifax said it had requested the “applicable personnel responsible” to update the vulnerability it never was fixed.“It appears that the breach occurred because of both human error and technology failures,” Richard Smith, Equifax CEO at the time, wrote in a testimony that was released at the hearing in October.Making the breach worse was Equifax’s further botched response to the breach.After the breach was revealed in September, the company’s site was crushed with traffic from concerned customers that left the site unreachable. In a separate instance in October, the Equifax site came under fire for harboring adware in a third-party partner’s Flash Player download.The extent and scope of the breach also has been continually expanding since it was first disclosed in September. In October, after an analysis with security company Mandiant, the company said that an additional 2.5 million customers were also impacted on top of the 143 million the company initially said were affected.Meanwhile, in February, documents submitted by Equifax to the US Senate Banking Committee revealed that attackers also accessed taxpayers identification numbers, email addresses, and credit card expiration dates for certain customers.Renewed AngerThis latest slew of impacted customers has renewed anger against the company, with some demanding stricter legislation for data protection – such as the proposed Data Breach Prevention and Compensation Act, which would impose strict security-related fines on credit reporting agencies.My office is continuing our investigation of #Equifax so we can get to the bottom of how this disastrous data breach happened. We also need to change the law.— Eric Schneiderman (@AGSchneiderman) March 1, 2018This is unacceptable. The California Department of Justice will continue to get to the bottom of this massive cybersecurity incident. We are committed to holding #Equifax accountable to the fullest extent of the law. https://t.co/fRPrUWcIyg— Xavier Becerra (@AGBecerra) March 1, 2018Equifax, meanwhile, continues to remain under investigation by several federal and state agencies, including a probe by the Consumer Financial Protection Bureau.Customers can see if their personal information has been breached by clicking on an “Am I Impacted” tool on Equifax’s website. The company also advised consumers to visit its web portal where they can review their account statements and credit reports, identify any unauthorized activity, and protect their personal information from attack.The company handles data on more than 820 million customers and 91 million businesses worldwide.Share this article:A record fine and two new compromises kick off the autumn compromise season.As more states take cybersecurity and privacy issues into their own hands, experts worry that big tech will push for preemption.Facebook’s VP of product management was able to discuss more specifics about how the breach itself occurred.
+Gary Burns
+
+                            on March 3, 2018
+
+
+Anonoman2018
+
+                            on March 6, 2018
+
+
+Niessuh Maddas
+
+                            on March 8, 2018
+
+
+B. Wilkes
+
+                            on March 23, 2018
+
+Join thousands of people who receive the latest breaking cybersecurity news every day.Researchers have found that a popular #IoT real-time operating system – #FreeRTOS – is riddled with serious… https://t.co/Mr7DT23ptl1 day agoGet the latest breaking news delivered daily to your inbox.The First Stop For Security News"},{"url" : "http://bit.ly/2oDK9uh","title" : "Equifax admits data breach impacted 2.4m more people","data" : ""},{"url" : "http://bit.ly/2F7tm90 ","title" : "Equifax’s massive 2017 data breach keeps getting worse - The Washington Post","data" : "Equifax said Thursday that 2.4 million more consumers than previously reported were affected by the massive data breach the company suffered last year, adding to an already stunning toll.This means that as many as 147.9 million consumers have been affected in some way by the breach, which amounts to about half the country.The affected people's compromised information involves partial driver's license data. It does not include Social Security numbers, which was the focus of earlier analyses of the breach and the reason this group of consumers was not identified sooner, according to the credit reporting company.“This is not about newly discovered stolen data,” said Paulino do Rego Barros Jr., Equifax's interim chief executive. “It's about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals.”This is not the first time Equifax has expanded its estimate of the breach's impact, which initially was put at 143 million consumers. In October, the company raised its estimate by 2.5 million, to 145.5 million. The company was dragged to Capitol Hill to answer for its missteps, with former chief executive Richard Smith — who by then had resigned in light of the crisis — accepting responsibility for the breach.Last month, a probe by Sen. Elizabeth Warren (D-Mass.) said the company failed to keep its computer systems adequately up to date and was not forthcoming enough about its description of the damage.“I spent five months investigating the Equifax breach and found the company failed to disclose the full extent of the hack,” Warren said in a statement Thursday. “Enough is enough. We have to start holding the credit reporting industry accountable.”Warren's investigation suggested that consumers' passport numbers had been stolen, but Equifax denies the claim.“We can confirm that passport numbers were an element we examined while conducting the forensic investigation,” the company said, “and we found no evidence that any passport numbers were stolen.”The chairman of the House Energy and Commerce Committee, Rep. Greg Walden (R-Ore.), said Thursday that despite "repeated" requests for documents from Equifax as a part of the committee's own probe, the credit agency has provided only partial responses.“We now are requesting a briefing with Mandiant, the third-party company responsible for investigating the breach,” said Walden and Rep. Robert E. Latta (R-Ohio), who leads a subcommittee on digital commerce and consumer protection. “The American people deserve to know what went wrong, and our investigation will continue in full force until there are answers.”Equifax said Thursday that it will extend offers of free credit monitoring to those who are in the new batch of affected consumers."},{"url" : "http://bit.ly/2GUBLx9","title" : "Equifax: 2.4M Additional Americans Affected by 2017 Breach | Digital Guardian","data" : "Read how a customer deployed a data protection program to 40,000 users in less than 120 days.ENEquifax this week revised the total number of Americans affected by last year’s breach: 147.9 million Americans, as well as some Canadian and British nationals.Equifax, the credit-reporting agency at the center of last year’s massive data breach, confirmed this week that more Americans than originally reported were impacted by the incident.According to a press release the company issued early Thursday an additional 2.4 million U.S. consumers may have had their names and partial driver's license information stolen.It's the second time the company has revised its estimate for the number of people affected by the breach. In October,  a month after the agency first announced the breach, it adjusted its figures, saying 145.5M individuals, up from 143M, may have had their personal information compromised.If there's a silver lining here it's the fact that the stolen driver's license information was partial. According to Equifax for the most part customers' home addresses, states, dates of issuance, or expiration were not included in the data.The agency was quick on Thursday to downplay the announcement, saying data belonging to the additional 2.4M Americans wasn't just discovered, it was identified as the result of an ongoing analysis that looked at data the attackers didn’t steal."This is not about newly discovered stolen data," Paulino do Rego Barros, Jr., Equifax’s Interim Chief Executive Officer said. "It's about sifting through the previously identified stolen data, analyzing other information in our databases that was not taken by the attackers, and making connections that enabled us to identify additional individuals."The Equifax breach has spurred some federal action but it remains to be seen how quickly the legislation will wend its way through Capitol Hill.Rep. Ted Lieu (D-Los Angeles County) introduced two bills on Thursday, shortly after Equifax’s announcement, designed to safeguard consumer data. The aim of one, the Protecting Consumer Information Act of 2018, is to broaden the Federal Trade Commission’s ability to enforce authority over credit reporting agencies. The second, the Ending Forced Arbitration for Victims of Data Breaches Act, aims to prohibit entities from enacting arbitration clauses for suits related to a data breach.The bills follow up a bioll introduced by Democratic Senators Mark R. Warner (D-VA) and Elizabeth Warren (D-MA) in January. That bill, the Data Breach Prevention and Compensation Act, also hopes to keep credit reporting agencies accountable for data breaches that involve consumer data by imposing mandatory penalties and fines at $100 for each consumer who has a piece of personally identifiable information compromised and another $50 for each additional piece of data.“The financial incentives here are all out of whack," Warren said at the time. "Equifax allowed personal data on more than half the adults in the country to get stolen, and its legal liability is so limited that it may end up making money off the breach.”It was only two weeks ago that lawmakers on the House Committee on Oversight and Government Reform called on the company to extend its offer of free credit monitoring and identify theft protection services. Equifax offered one year of the services for free but Committee Democrats pressed the agency’s interim CEO in a letter to provide three years citing statements made by Equifax’s chief information officer that attackers usually wait a year or more until trying to sell data on the dark web.Get email updates with the latestfrom the Digital Guardian BlogThank you for subscribing!WHITEPAPERSChris Brook is the editor of Data Insider. He is a technology journalist with nearly a decade of experience writing about information security, hackers, and privacy. Prior to joining Digital Guardian he helped launch Threatpost.WebinarWatch this webinar on-demand to learn how to build an effective incident response plan for your organization.DOWNLOAD NOWView the discussion thread."},{"url" : " https://buff.ly/2FLimPV ","title" : "Equifax says insurance covers $75 million in breach costs | Business Insurance","data" : "BI’s Article search uses Boolean search capabilities. If you are not familiar with these principles, here are some quick tips.To search specifically for more than one word, put the search term in quotation marks. For example, “workers compensation”. This will limit your search to that combination of words.To search for a combination of terms, use quotations and the & symbol. For example, “hurricane” & “loss”.
+Risk Management
+
+
+
+Thomson Reuters 
+
+
+(Reuters) — Equifax Inc. said on Friday it expects $275 million in costs in 2018 related to the credit reporting company’s massive data breach last year, offset by $75 million in insurance proceeds.The costs mainly reflect technology and data security upgrades, legal fees, and free identity theft protection and credit monitoring offered to the more than 147 million consumers affected by the cyber security incident, the company said in a conference call.(Market sources previously identified the lead insurer on the risk.) Equifax on Thursday reported fourth-quarter profits that topped Wall Street forecasts after earlier in the day disclosing that an additional 2.4 million people were affected by the cyber attack.So far, the Atlanta-based company has recorded breach-related expenses of $114 million, net of insurance recoveries.Equifax said in September that criminals had breached its systems and stole personally identifiable information of U.S., UK, and Canadian consumers, including names, Social Security numbers, birth dates, addresses and, in some instances, driver’s license and credit card numbers.“It is possible that further analysis will identify additional consumers affected or additional types of data accessed,” Equifax said in a regulatory filing on Thursday.As a result of the 2017 cyber security incident, Equifax said it was the subject of numerous class action lawsuits, as well as investigations by U.S. federal, state, local and foreign governmental officials and agencies.      COPYRIGHT © 2018 BUSINESS INSURANCE HOLDINGS"},{"url" : "https://goo.gl/CKzoNb","title" : "Equifax hack just got worse for a lot more Americans | ZDNet","data" : "An additional 2.4 million Americans have been identified as victims of the company's 2017 breach.
+                                   By Zack Whittaker
+            
+                    
+                    for Zero Day
+        
+                                        |            March 2, 2018 -- 14:06 GMT (06:06 PST)
+                
+                                                                                            | Topic: Security
+(Image: file photo)Equifax has confirmed more Americans are impacted by the cyberattack that targeted the credit rating giant last year than was first revealed.The company said in a statement Thursday that an ongoing analysis showed 2.4 million more Americans had their names and partial drivers' license information stolen, but they were not previously thought to have been affected.The company said the additional information was "partial," because in most cases the stolen data didn't include consumers' home addresses or other information on their drivers' licenses.Hackers are said to have targeted social security numbers and names of consumers.Equifax initially said 143 million consumers were affected by the data breach but later revised that figure to 145.5 million.The total number of Americans affected now stands at about 147.9 million Americans, as well as some Canadian and British nationals.Equifax collects and holds data on more than 800 million consumers worldwide.The hack became the largest single data breach reported in 2017.Last month, Equifax made headlines again after a leading senator criticized the company for failing to reveal that hackers had stolen tax identification numbers (TINs), email addresses, and additional license information -- such as issue dates and by which state -- which was not originally disclosed.It was the latest twist in a long-running saga of mistakes and missteps made by the company, which has been accused of persistently botching its response to the hack. Not only did Equifax take four months to disclose the hack, the breach was later attributed to a vulnerable server that the company had failed to patch earlier in the year. After the hack was eventually disclosed, Equifax struggled to inform its users -- many of which had no idea the company was hoarding data on them in the first place -- if they were vulnerable.Although lawmakers are continuing to investigate the breach, the government body charged with consumer protections, the Consumer Financial Protection Bureau, halted its investigation following a change in leadership.
+
+                        Got a tip?
+                    
+You can send tips securely over Signal and WhatsApp at 646-755–8849. You can also send PGP email with the fingerprint: 4D0E 92F2 E36A EC51 DAAE 5D97 CB8C 15FA EB6C EEA5.
+Read More
+SecurityOnline security 101: Tips for protecting your privacy from hackers and spiesSecurityUS government's "do not buy" list shuts out Russia, ChinaSecurityNew Spectre attack can remotely steal secrets, researchers saySecurityFlaw let researchers snoop on Swann smart security cameras
+Vendors confirm products affected by libssh bug as PoC code pops up on GitHub
+
+								
+																	Red Hat and F5 Networks acknowledge that some products are vulnerable to the libssh authentication bug.
+															
+Audio recording is now disabled by default in OpenBSD
+
+								
+																	OpenBSD 6.4 also ships with Meltdown, Spectre v2, SpectreRSB, L1FT, and Lazy FPU mitigations.
+															
+Tim Cook calls for Bloomberg to retract controversial chip story
+
+								
+																	Apple's chief executive is hoping Bloomberg will "do the right thing" and formally retract its Chinese spy chip story.
+															
+Kaspersky says it detected infections with DarkPulsar, alleged NSA malware
+
+								
+																	Victims located in Russia, Iran, and Egypt; related to nuclear energy, telecommunications, IT, aerospace, and R&D.
+															
+Password and credit card-stealing Azorult malware adds new tricks
+
+								
+																	Malware can now steal more types of cryptocurrecny and comes with other updates, likely in response to a free version being leaked online.
+															
+Google warns Apple: Missing bugs in your security bulletins are 'disincentive to patch'
+
+								
+																	Google's Project Zero has again called Apple out for silently patching flaws.
+															
+Presidential race in Brazil marred by WhatsApp scandal
+
+								
+																	Frontrunner Jair Bolsonaro is involved in accusations over illegal campaigning tactics using the messaging service.
+															
+Windows 10 will banish Spectre slowdowns with Google's Retpoline patch
+
+								
+																	​Google's Retpoline fix for the Spectre Variant 2 flaw helps minimize performance hit on Windows 10 machines.
+															
+DJI website's 'Get the app on Google Play' directs users elsewhere
+
+								
+																	Opinion: At best it's an oversight, at worst it's placing user security and privacy at serious risk.
+															© 2018 CBS Interactive. All rights reserved.
+                    Privacy Policy |
+                    Cookies |
+                    Ad Choice |
+                    Advertise |
+                    Terms of Use |
+                    Mobile User Agreement
+"},{"url" : "https://buff.ly/2FM60Xw ","title" : "Equifax admits data breach impacted 2.4m more people","data" : ""},{"url" : " http://nbcnews.to/2F36ED1","title" : "Equifax identifies additional 2.4 million customers hit by data breach","data" : "Credit score giant Equifax said on Thursday it had identified another 2.4 million U.S. consumers whose names and driver's license information were stolen in a data breach last year that affected half the U.S. population.The company said it was able confirm the identities of U.S. consumers whose driver's license information was taken by referencing other information in proprietary company records that the attackers did not steal."Equifax will notify these newly identified U.S. consumers directly, and will offer identity theft protection and credit file monitoring services at no cost to them," the company said.Related: After Equifax, why are our cat photos safe but not our social security numbers?The new information is the latest blow to the industry giant, which lost three top executives — including its longtime CEO Rick Smith — in the fallout of the mega-breach that exposed private information belonging to 143 million people.The data breach, which was discovered July 29, included sensitive information such as social security numbers, birthdays, addresses, and in some instances, driver's license numbers. The company is continuing to work closely with the FBI in its investigation.© 2018 NBC UNIVERSAL"}]}
